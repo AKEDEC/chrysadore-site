@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrysa Doré — Haute Couture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img class="preloader-bg" src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=3200" alt="">
+    <div class="preloader-overlay"></div>
+    <div class="preloader-inner">
+      <div class="preloader-logo">Chrysa</div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-chrysa">Chrysa</span>
+        <span class="logo-separator"></span>
+        <span class="logo-dore">Doré</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#collections" class="nav-link" data-hover="Bộ Sưu Tập">Bộ Sưu Tập</a></li>
+        <li><a href="#atelier" class="nav-link" data-hover="Atelier">Atelier</a></li>
+        <li><a href="#heritage" class="nav-link" data-hover="Di Sản">Di Sản</a></li>
+        <li><a href="#contact" class="nav-link" data-hover="Liên Hệ">Liên Hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+        <button class="nav-icon" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="nav-icon" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="nav-icon cart-icon" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="#collections">Bộ Sưu Tập</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#heritage">Di Sản</a></li>
+      <li><a href="#contact">Liên Hệ</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=3200" alt="" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-animate>Collection Printemps — Été 2026</p>
+      <h1 class="hero-title" data-animate>
+        <span class="hero-title-line">L'Essence</span>
+        <span class="hero-title-line hero-title-italic">du Luxe</span>
+      </h1>
+      <p class="hero-subtitle" data-animate>Nơi nghệ thuật thủ công đỉnh cao hòa quyện cùng vẻ đẹp vượt thời gian</p>
+      <a href="#collections" class="hero-cta" data-animate>
+        <span>Khám Phá Bộ Sưu Tập</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span>Cuộn xuống</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+    <div class="hero-side-text">Chrysa Doré — Haute Couture Since MMXXIV</div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Haute Couture</span>
+      <span class="marquee-dot"></span>
+      <span>Prêt-à-Porter</span>
+      <span class="marquee-dot"></span>
+      <span>Artisanat d'Exception</span>
+      <span class="marquee-dot"></span>
+      <span>Savoir-Faire</span>
+      <span class="marquee-dot"></span>
+      <span>Haute Couture</span>
+      <span class="marquee-dot"></span>
+      <span>Prêt-à-Porter</span>
+      <span class="marquee-dot"></span>
+      <span>Artisanat d'Exception</span>
+      <span class="marquee-dot"></span>
+      <span>Savoir-Faire</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- Collections Section -->
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <span class="section-label" data-animate>01 / Collections</span>
+      <h2 class="section-title" data-animate>Bộ Sưu Tập<br><em>Đặc Biệt</em></h2>
+      <p class="section-desc" data-animate>Mỗi thiết kế là một tác phẩm nghệ thuật, được tạo nên từ những chất liệu quý hiếm nhất thế giới và bàn tay nghệ nhân bậc thầy.</p>
+    </div>
+    <div class="collections-grid">
+      <!-- Collection 1 -->
+      <article class="collection-card" data-animate>
+        <div class="collection-img">
+          <div class="collection-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Adult_Mules.jpg?v=1773833405&width=3200" alt="Lumière d'Or">
+          </div>
+          <div class="collection-img-overlay">
+            <span class="collection-season">SS26</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>Lumière d'Or</h3>
+          <p>Ánh sáng vàng rực rỡ từ những sợi tơ lụa Ý, dệt nên câu chuyện của sự xa hoa tuyệt đối.</p>
+          <a href="#" class="collection-link">
+            Khám phá
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <!-- Collection 2 -->
+      <article class="collection-card" data-animate>
+        <div class="collection-img">
+          <div class="collection-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/SS26_Kickers_Website_Adults_Mules_Collage_Banner_2.jpg?v=1773835032&width=3200" alt="Nuit Éternelle">
+          </div>
+          <div class="collection-img-overlay">
+            <span class="collection-season">AW26</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>Nuit Éternelle</h3>
+          <p>Bí ẩn của đêm trường, nơi nhung lụa đen huyền thoại gặp gỡ kim cương và ngọc trai.</p>
+          <a href="#" class="collection-link">
+            Khám phá
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <!-- Collection 3 -->
+      <article class="collection-card" data-animate>
+        <div class="collection-img">
+          <div class="collection-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Image_SS26_Adult_Mules_3.jpg?v=1773835335&width=3200" alt="Renaissance">
+          </div>
+          <div class="collection-img-overlay">
+            <span class="collection-season">COUTURE</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>Renaissance</h3>
+          <p>Tái sinh những giá trị cổ điển trong dáng hình hiện đại — haute couture ở đỉnh cao nghệ thuật.</p>
+          <a href="#" class="collection-link">
+            Khám phá
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured">
+    <div class="section-header">
+      <span class="section-label" data-animate>02 / Sélection</span>
+      <h2 class="section-title" data-animate>Tuyển Chọn<br><em>Tinh Hoa</em></h2>
+    </div>
+    <div class="featured-grid">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate>
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="Robe Dorée Impériale">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Quick view">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+            <button class="product-action-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <span class="product-badge">Exclusive</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Haute Couture</span>
+          <h3 class="product-name">Robe Dorée Impériale</h3>
+          <p class="product-price">€ 28.500</p>
+        </div>
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate>
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="Sac Chrysa Signature">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Quick view">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+            <button class="product-action-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Maroquinerie</span>
+          <h3 class="product-name">Sac Chrysa Signature</h3>
+          <p class="product-price">€ 12.800</p>
+        </div>
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate>
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="Collier Étoile de Minuit">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Quick view">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+            <button class="product-action-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <span class="product-badge">Limited</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Joaillerie</span>
+          <h3 class="product-name">Collier Étoile de Minuit</h3>
+          <p class="product-price">€ 45.000</p>
+        </div>
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate>
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="Manteau Cachemire Royal">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Quick view">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+            <button class="product-action-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Prêt-à-Porter</span>
+          <h3 class="product-name">Manteau Cachemire Royal</h3>
+          <p class="product-price">€ 8.900</p>
+        </div>
+      </article></a>
+    </div>
+  </section>
+
+  <!-- Atelier Section -->
+  <section class="atelier" id="atelier">
+    <div class="atelier-inner">
+      <div class="atelier-visual" data-animate>
+        <div class="atelier-img-placeholder">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/BTS25_Lifestyle.jpg?v=1764761346&width=860" alt="L'Atelier Chrysa Doré">
+          <div class="atelier-overlay-text">L'Art de<br>la Couture</div>
+        </div>
+      </div>
+      <div class="atelier-content">
+        <span class="section-label" data-animate>03 / L'Atelier</span>
+        <h2 class="section-title" data-animate>Nghệ Thuật<br><em>Thủ Công</em></h2>
+        <p class="atelier-text" data-animate>
+          Tại xưởng Atelier của Chrysa Doré, mỗi tác phẩm được sinh ra từ hơn 800 giờ lao động nghệ thuật.
+          Những nghệ nhân bậc thầy, với di sản truyền thừa qua nhiều thế hệ, biến những chất liệu quý hiếm nhất
+          thành những kiệt tác thời trang đương đại.
+        </p>
+        <div class="atelier-stats" data-animate>
+          <div class="stat">
+            <span class="stat-number">800+</span>
+            <span class="stat-label">Giờ thủ công<br>cho mỗi tác phẩm</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">47</span>
+            <span class="stat-label">Nghệ nhân<br>bậc thầy</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Quốc gia<br>nguyên liệu</span>
+          </div>
+        </div>
+        <a href="#" class="atelier-link" data-animate>
+          Tham Quan Atelier
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage / Brand Story -->
+  <section class="heritage" id="heritage">
+    <div class="heritage-bg"></div>
+    <div class="heritage-content">
+      <span class="section-label" data-animate>04 / Héritage</span>
+      <h2 class="heritage-title" data-animate>
+        "Chúng tôi không tạo ra thời trang.<br>
+        <em>Chúng tôi tạo ra di sản."</em>
+      </h2>
+      <p class="heritage-text" data-animate>
+        Chrysa Doré — từ tiếng Hy Lạp "Chrysa" (vàng ròng) và tiếng Pháp "Doré" (mạ vàng) —
+        là biểu tượng của sự xa hoa tuyệt đối. Ra đời từ niềm đam mê bất tận với cái đẹp,
+        thương hiệu cam kết mang đến những trải nghiệm thời trang độc nhất vô nhị,
+        nơi mỗi đường kim mũi chỉ đều kể một câu chuyện.
+      </p>
+      <div class="heritage-values" data-animate>
+        <div class="value">
+          <div class="value-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h4>Excellence</h4>
+          <p>Tiêu chuẩn hoàn mỹ trong từng chi tiết</p>
+        </div>
+        <div class="value">
+          <div class="value-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h4>Passion</h4>
+          <p>Đam mê cháy bỏng với nghệ thuật thời trang</p>
+        </div>
+        <div class="value">
+          <div class="value-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h4>Exclusivité</h4>
+          <p>Giới hạn số lượng, vô hạn giá trị</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial / Lookbook -->
+  <section class="editorial">
+    <div class="section-header">
+      <span class="section-label" data-animate>05 / Éditorial</span>
+      <h2 class="section-title" data-animate>Le Monde<br><em>Chrysa Doré</em></h2>
+    </div>
+    <div class="editorial-grid">
+      <div class="editorial-item editorial-large" data-animate>
+        <div class="editorial-placeholder">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_ACW.jpg?v=1773834116&width=860" alt="Paris Fashion Week">
+          <div class="editorial-placeholder-text">
+            <span class="editorial-tag">EDITORIAL</span>
+            <span class="editorial-issue">Paris Fashion Week SS26</span>
+          </div>
+        </div>
+      </div>
+      <div class="editorial-item" data-animate>
+        <div class="editorial-placeholder">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Kids_Mule.jpg?v=1773833607&width=3200" alt="Lumière d'Or">
+          <div class="editorial-placeholder-text">
+            <span class="editorial-tag">CAMPAIGN</span>
+            <span class="editorial-issue">Lumière d'Or</span>
+          </div>
+        </div>
+      </div>
+      <div class="editorial-item" data-animate>
+        <div class="editorial-placeholder">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Adult_Mules.jpg?v=1773833405&width=3200" alt="L'Atelier Paris">
+          <div class="editorial-placeholder-text">
+            <span class="editorial-tag">BEHIND THE SCENES</span>
+            <span class="editorial-issue">L'Atelier Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <span class="section-label" data-animate>06 / Contact</span>
+        <h2 class="section-title" data-animate>Trải Nghiệm<br><em>Đặc Quyền</em></h2>
+        <p class="contact-text" data-animate>
+          Đăng ký để nhận lời mời độc quyền đến các sự kiện ra mắt bộ sưu tập,
+          quyền truy cập sớm vào các thiết kế giới hạn, và dịch vụ tư vấn phong cách cá nhân.
+        </p>
+        <form class="contact-form" data-animate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Họ và Tên" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Số Điện Thoại">
+          </div>
+          <button type="submit" class="form-submit">
+            <span>Đăng Ký Đặc Quyền</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="contact-right" data-animate>
+        <div class="contact-info-block">
+          <h4>Flagship Store</h4>
+          <p>8 Avenue Montaigne<br>75008 Paris, France</p>
+        </div>
+        <div class="contact-info-block">
+          <h4>Showroom Việt Nam</h4>
+          <p>Tầng 5, Landmark 81<br>Quận Bình Thạnh, TP.HCM</p>
+        </div>
+        <div class="contact-info-block">
+          <h4>Private Client Services</h4>
+          <p>concierge@chrysadore.com<br>+33 1 42 68 00 00</p>
+        </div>
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/><path d="M9 18l1.5-6"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="WeChat">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5A8.48 8.48 0 0121 11.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-chrysa">Chrysa</span>
+            <span class="logo-separator"></span>
+            <span class="logo-dore">Doré</span>
+          </div>
+          <p class="footer-tagline">L'Essence du Luxe</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h5>Maison</h5>
+            <ul>
+              <li><a href="#">Di Sản</a></li>
+              <li><a href="#">Atelier</a></li>
+              <li><a href="#">Nghệ Nhân</a></li>
+              <li><a href="#">Tuyển Dụng</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Collections</h5>
+            <ul>
+              <li><a href="#">Haute Couture</a></li>
+              <li><a href="#">Prêt-à-Porter</a></li>
+              <li><a href="#">Joaillerie</a></li>
+              <li><a href="#">Maroquinerie</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#">Private Shopping</a></li>
+              <li><a href="#">Made to Measure</a></li>
+              <li><a href="#">Gift Services</a></li>
+              <li><a href="#">Care & Repair</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Điều Khoản</a></li>
+              <li><a href="#">Bảo Mật</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chrysa Doré. Tous droits réservés.</p>
+        <p class="footer-craft">Handcrafted with passion in Paris</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

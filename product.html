@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robe Dorée Impériale — Chrysa Doré</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-chrysa">Chrysa</span>
+        <span class="logo-dore">Doré</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#collections" class="nav-link">Bộ Sưu Tập</a></li>
+        <li><a href="index.html#atelier" class="nav-link">Atelier</a></li>
+        <li><a href="index.html#heritage" class="nav-link">Di Sản</a></li>
+        <li><a href="index.html#contact" class="nav-link">Liên Hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+        <button class="nav-icon" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="nav-icon" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="nav-icon cart-icon" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Trang Chủ</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="#">Haute Couture</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Robe Dorée Impériale</span>
+    </div>
+  </div>
+
+  <!-- Product Detail -->
+  <section class="pd">
+    <div class="pd-inner">
+      <!-- Gallery -->
+      <div class="pd-gallery">
+        <div class="pd-gallery-main">
+          <div class="pd-main-img active" id="mainImg">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="Robe Dorée Impériale" id="mainImage">
+          </div>
+          <button class="pd-zoom-btn" id="zoomBtn" aria-label="Zoom">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/>
+            </svg>
+          </button>
+        </div>
+        <div class="pd-thumbs">
+          <button class="pd-thumb active" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="View 1">
+          </button>
+          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="View 2">
+          </button>
+          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="View 3">
+          </button>
+          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="View 4">
+          </button>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="pd-info">
+        <div class="pd-info-top">
+          <span class="pd-category">Haute Couture — SS26</span>
+          <h1 class="pd-title">Robe Dorée Impériale</h1>
+          <p class="pd-price">€ 28.500</p>
+          <p class="pd-tax">Taxes incluses. Livraison calculée à la caisse.</p>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <div class="pd-description">
+          <p>
+            Một kiệt tác của nghệ thuật thủ công đỉnh cao. Robe Dorée Impériale được tạo nên từ
+            lụa tơ tằm Ý cao cấp nhất, kết hợp cùng những đường thêu tay tinh xảo mất hơn 600 giờ
+            để hoàn thiện. Thiết kế mang hơi thở hoàng gia, tôn vinh vẻ đẹp quyền lực và sang trọng
+            của người phụ nữ hiện đại.
+          </p>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- Color -->
+        <div class="pd-option">
+          <span class="pd-option-label">Màu sắc: <strong>Noir Impérial</strong></span>
+          <div class="pd-colors">
+            <button class="pd-color active" style="background: #0a0a0a;" aria-label="Noir Impérial"></button>
+            <button class="pd-color" style="background: #1a1a2e;" aria-label="Bleu Nuit"></button>
+            <button class="pd-color" style="background: #2d0a0a;" aria-label="Bordeaux"></button>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="pd-option">
+          <span class="pd-option-label">Kích cỡ</span>
+          <div class="pd-sizes">
+            <button class="pd-size">34</button>
+            <button class="pd-size">36</button>
+            <button class="pd-size active">38</button>
+            <button class="pd-size">40</button>
+            <button class="pd-size">42</button>
+            <button class="pd-size disabled" disabled>44</button>
+          </div>
+          <a href="#" class="pd-size-guide">Hướng dẫn chọn size</a>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- Actions -->
+        <div class="pd-actions">
+          <button class="pd-add-cart">
+            <span>Thêm Vào Giỏ Hàng</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </button>
+          <button class="pd-wishlist" aria-label="Add to wishlist">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Perks -->
+        <div class="pd-perks">
+          <div class="pd-perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 3 20 16 16 16 16 8"/><line x1="1" y1="10" x2="16" y2="10"/>
+            </svg>
+            <span>Giao hàng miễn phí toàn cầu</span>
+          </div>
+          <div class="pd-perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Bảo hành trọn đời</span>
+          </div>
+          <div class="pd-perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Đóng gói quà tặng cao cấp</span>
+          </div>
+        </div>
+
+        <!-- Accordion Details -->
+        <div class="pd-accordions">
+          <div class="pd-accordion">
+            <button class="pd-accordion-header">
+              <span>Chi Tiết Sản Phẩm</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+            <div class="pd-accordion-body">
+              <ul>
+                <li>Chất liệu: 100% lụa tơ tằm Ý (Seteria di Como)</li>
+                <li>Lót trong: Charmeuse silk cao cấp</li>
+                <li>Thêu tay bằng chỉ vàng 18K</li>
+                <li>Khóa kéo ẩn phía sau, hoàn thiện bằng tay</li>
+                <li>Sản xuất tại: Atelier Chrysa Doré, Paris</li>
+                <li>Mã sản phẩm: CD-HC-2026-001</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pd-accordion">
+            <button class="pd-accordion-header">
+              <span>Hướng Dẫn Bảo Quản</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+            <div class="pd-accordion-body">
+              <ul>
+                <li>Chỉ giặt khô chuyên nghiệp</li>
+                <li>Bảo quản trong túi vải chuyên dụng đi kèm</li>
+                <li>Tránh tiếp xúc trực tiếp với nước hoa</li>
+                <li>Treo trên móc áo có đệm vai</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pd-accordion">
+            <button class="pd-accordion-header">
+              <span>Vận Chuyển & Đổi Trả</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+            <div class="pd-accordion-body">
+              <ul>
+                <li>Giao hàng miễn phí toàn cầu qua DHL Express</li>
+                <li>Thời gian giao: 3-5 ngày làm việc</li>
+                <li>Đổi trả trong vòng 14 ngày</li>
+                <li>Dịch vụ chỉnh sửa miễn phí lần đầu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="pd-related">
+    <div class="section-header">
+      <span class="section-label">Có Thể Bạn Thích</span>
+      <h2 class="section-title">Sản Phẩm<br><em>Tương Tự</em></h2>
+    </div>
+    <div class="pd-related-grid">
+      <article class="product-card">
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="Sac Chrysa Signature">
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Maroquinerie</span>
+          <h3 class="product-name">Sac Chrysa Signature</h3>
+          <p class="product-price">€ 12.800</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="Collier Étoile de Minuit">
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Joaillerie</span>
+          <h3 class="product-name">Collier Étoile de Minuit</h3>
+          <p class="product-price">€ 45.000</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="Manteau Cachemire Royal">
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Prêt-à-Porter</span>
+          <h3 class="product-name">Manteau Cachemire Royal</h3>
+          <p class="product-price">€ 8.900</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-img">
+          <div class="product-img-placeholder">
+            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17968-B1.jpg?v=1773739506&width=440" alt="Écharpe Soie Royale">
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Accessoires</span>
+          <h3 class="product-name">Écharpe Soie Royale</h3>
+          <p class="product-price">€ 2.400</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-chrysa">Chrysa</span>
+        <span class="logo-separator"></span>
+        <span class="logo-dore">Doré</span>
+          </div>
+          <p class="footer-tagline">L'Essence du Luxe</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h5>Maison</h5>
+            <ul>
+              <li><a href="#">Di Sản</a></li>
+              <li><a href="#">Atelier</a></li>
+              <li><a href="#">Nghệ Nhân</a></li>
+              <li><a href="#">Tuyển Dụng</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Collections</h5>
+            <ul>
+              <li><a href="#">Haute Couture</a></li>
+              <li><a href="#">Prêt-à-Porter</a></li>
+              <li><a href="#">Joaillerie</a></li>
+              <li><a href="#">Maroquinerie</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#">Private Shopping</a></li>
+              <li><a href="#">Made to Measure</a></li>
+              <li><a href="#">Gift Services</a></li>
+              <li><a href="#">Care & Repair</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Điều Khoản</a></li>
+              <li><a href="#">Bảo Mật</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chrysa Doré. Tous droits réservés.</p>
+        <p class="footer-craft">Handcrafted with passion in Paris</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>
