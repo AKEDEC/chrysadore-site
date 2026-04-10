@@ -59,14 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
     addCartBtn.addEventListener('click', () => {
       const span = addCartBtn.querySelector('span');
       const original = span.textContent;
-      span.textContent = 'Đã Thêm Vào Giỏ';
-      addCartBtn.style.background = 'var(--gold-dark)';
 
-      const cartCount = document.querySelector('.cart-count');
-      if (cartCount) {
-        cartCount.textContent = parseInt(cartCount.textContent) + 1;
+      // Get selected size and color
+      const activeSize = document.querySelector('.pd-size.active');
+      const activeColor = document.querySelector('.pd-color.active');
+      const sizeText = activeSize ? `Taille ${activeSize.textContent}` : '';
+      const colorLabel = activeColor ? activeColor.getAttribute('aria-label') : '';
+      const variant = [colorLabel, sizeText].filter(Boolean).join(' · ');
+
+      // Get product info from the page
+      const name = document.querySelector('.pd-title')?.textContent || 'Sản phẩm';
+      const priceText = document.querySelector('.pd-price')?.textContent || '0';
+      const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
+      const image = document.getElementById('mainImage')?.src || '';
+      const category = document.querySelector('.pd-category')?.textContent || '';
+
+      // Use ChrysaCart if available
+      if (window.ChrysaCart) {
+        window.ChrysaCart.add({
+          id: 'cd-' + name.toLowerCase().replace(/\s+/g, '-').slice(0, 20) + (activeSize ? '-' + activeSize.textContent : ''),
+          name,
+          price,
+          image,
+          category,
+          variant,
+        });
       }
 
+      // Button feedback
+      span.textContent = 'Đã Thêm Vào Giỏ';
+      addCartBtn.style.background = 'var(--gold-dark)';
       setTimeout(() => {
         span.textContent = original;
         addCartBtn.style.background = '';

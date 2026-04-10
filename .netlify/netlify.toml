@@ -1,0 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/tylerninh/Claude/Doré/.claude/worktrees/focused-albattani"
+publishOrigin = "default"
+base = "/Users/tylerninh/Claude/Doré/.claude/worktrees/focused-albattani"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

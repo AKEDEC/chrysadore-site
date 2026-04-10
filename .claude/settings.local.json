@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open http://localhost:8000)",
+      "WebFetch(domain:www.kickers.co.uk)"
+    ]
+  }
+}
