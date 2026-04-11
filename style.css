@@ -1644,7 +1644,23 @@ body.light-mode .nav.scrolled .nav-icon {
   height: 20px;
 }
 
-/* Light mode removed: dark mode only */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+body.light-mode .theme-toggle .icon-moon {
+  display: none;
+}
+
+body.light-mode .theme-toggle .icon-sun {
+  display: block;
+}
+
+/* Light mode overrides */
 
 body.light-mode .social-link {
   border-color: rgba(0, 0, 0, 0.1);

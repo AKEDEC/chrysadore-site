@@ -222,8 +222,8 @@
 }
 
 .story-split-img-portrait img {
-  aspect-ratio: 3/4;
-  object-position: center top;
+  aspect-ratio: 1/1;
+  object-position: center 15%;
 }
 
 /* Body text used in splits */
