@@ -1719,3 +1719,32 @@ body.light-mode ::selection {
   background: var(--gold);
   color: #fff;
 }
+
+/* ---------- Performance Optimizations ---------- */
+.hero-bg-img,
+.story-hero-img {
+  will-change: transform;
+  contain: layout style;
+}
+
+.nav {
+  will-change: transform, background;
+  contain: layout style;
+}
+
+.cursor,
+.cursor-follower {
+  will-change: transform;
+  contain: layout style paint;
+}
+
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
+/* Reduce paint on scroll-heavy sections */
+.hero,
+.lookbook,
+.products {
+  contain: layout style;
+}

@@ -4,10 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bộ Sưu Tập — Chrysa Doré</title>
+  <meta name="description" content="Khám phá bộ sưu tập giày Chrysa Doré — thiết kế tinh tế, bản sắc Việt Nam.">
+  <meta property="og:title" content="Bộ Sưu Tập — Chrysa Doré">
+  <meta property="og:description" content="Khám phá bộ sưu tập giày Chrysa Doré — thiết kế tinh tế, bản sắc Việt Nam.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chrysadore.com/collection.html">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
   <link rel="preconnect" href="https://www.kickers.co.uk" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://www.kickers.co.uk">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="collection.css">
   <link rel="stylesheet" href="cart.css">
@@ -76,7 +84,7 @@
   <!-- Collection Hero -->
   <section class="col-hero">
     <div class="col-hero-bg">
-      <img src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=1600" alt="">
+      <img src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=1600" alt="" width="1600" height="900" fetchpriority="high" decoding="async">
     </div>
     <div class="col-hero-overlay"></div>
     <div class="col-hero-content">
@@ -478,13 +486,13 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="cart.js"></script>
+  <script src="script.js" defer></script>
+  <script src="cart.js" defer></script>
   <script>
   /* ============================================
      CHRYSA DORÉ — Collection Page Interactions
      ============================================ */
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementById('colGrid');
     const cards = Array.from(grid.querySelectorAll('.col-card'));
     const pills = document.querySelectorAll('.col-filter-pill');
@@ -535,8 +543,8 @@
         card.style.transform = 'translateY(0)';
       }, 100 + i * 80);
     });
-  })();
+  });
   </script>
-  <script src="lang.js"></script>
+  <script src="lang.js" defer></script>
 </body>
 </html>
