@@ -213,6 +213,42 @@ img {
   box-shadow: 0 1px 0 rgba(47, 165, 101, 0.08);
 }
 
+/* Light mode: nav starts dark (matches hero), turns white on scroll */
+body.light-mode .nav {
+  color: #fff;
+}
+
+body.light-mode .nav .nav-logo,
+body.light-mode .nav .logo-chrysa {
+  color: #fff;
+}
+
+body.light-mode .nav .nav-link {
+  color: #fff;
+}
+
+body.light-mode .nav .nav-icon {
+  color: #fff;
+}
+
+body.light-mode .nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .nav.scrolled .nav-logo,
+body.light-mode .nav.scrolled .logo-chrysa {
+  color: var(--black);
+}
+
+body.light-mode .nav.scrolled .nav-link {
+  color: var(--black);
+}
+
+body.light-mode .nav.scrolled .nav-icon {
+  color: var(--black);
+}
+
 .nav-inner {
   max-width: 1400px;
   margin: 0 auto;
@@ -1645,9 +1681,7 @@ body.light-mode .footer-tagline {
   color: #999;
 }
 
-body.light-mode .nav-logo {
-  color: var(--black);
-}
+/* nav-logo color handled above in nav section */
 
 body.light-mode .footer-logo {
   color: var(--black);
