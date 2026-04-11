@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chrysa Doré — Haute Couture</title>
+  <title>Chrysa Doré | Haute Couture</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="lang.css">
 </head>
 <body>
 
@@ -34,20 +35,11 @@
         <span class="logo-dore">Doré</span>
       </a>
       <ul class="nav-links">
-        <li><a href="collection.html" class="nav-link" data-hover="Bộ Sưu Tập">Bộ Sưu Tập</a></li>
-        <li><a href="#atelier" class="nav-link" data-hover="Atelier">Atelier</a></li>
-        <li><a href="#heritage" class="nav-link" data-hover="Di Sản">Di Sản</a></li>
-        <li><a href="#contact" class="nav-link" data-hover="Liên Hệ">Liên Hệ</a></li>
+        <li><a href="collection.html" class="nav-link" data-hover="Bộ Sưu Tập" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+        <li><a href="story.html" class="nav-link" data-hover="Our Story" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
+        <li><a href="#contact" class="nav-link" data-hover="Liên Hệ" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-          </svg>
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-          </svg>
-        </button>
         <button class="nav-icon" aria-label="Search">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -74,10 +66,9 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-menu-links">
-      <li><a href="collection.html">Bộ Sưu Tập</a></li>
-      <li><a href="#atelier">Atelier</a></li>
-      <li><a href="#heritage">Di Sản</a></li>
-      <li><a href="#contact">Liên Hệ</a></li>
+      <li><a href="collection.html" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+      <li><a href="story.html" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
+      <li><a href="#contact" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
     </ul>
   </div>
 
@@ -89,24 +80,24 @@
       <div class="hero-pattern"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow" data-animate>Giày Da Thủ Công Cho Trẻ Em — Depuis 1968</p>
+      <p class="hero-eyebrow" data-animate data-vi="Giày Da Thủ Công Cho Trẻ Em | Depuis 1968" data-en="Handcrafted Leather Shoes for Children | Depuis 1968" data-zh="手工皮鞋，专为儿童 | Depuis 1968">Giày Da Thủ Công Cho Trẻ Em | Depuis 1968</p>
       <h1 class="hero-title" data-animate>
         <span class="hero-title-line">Premiers</span>
         <span class="hero-title-line hero-title-italic">Pas</span>
       </h1>
-      <p class="hero-subtitle" data-animate>Giày da thủ công nâng niu từng bước chân đầu đời của bé</p>
+      <p class="hero-subtitle" data-animate data-vi="Giày da thủ công nâng niu từng bước chân đầu đời của bé" data-en="Handcrafted leather shoes cherishing every first step of your child" data-zh="手工皮鞋，珍视宝贝的每一个初次步伐">Giày da thủ công nâng niu từng bước chân đầu đời của bé</p>
       <a href="collection.html" class="hero-cta" data-animate>
-        <span>Khám Phá Bộ Sưu Tập</span>
+        <span data-vi="Khám Phá Bộ Sưu Tập" data-en="Explore the Collection" data-zh="探索系列">Khám Phá Bộ Sưu Tập</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
       </a>
     </div>
     <div class="hero-scroll">
-      <span>Cuộn xuống</span>
+      <span data-vi="Cuộn xuống" data-en="Scroll down" data-zh="向下滚动">Cuộn xuống</span>
       <div class="hero-scroll-line"></div>
     </div>
-    <div class="hero-side-text">Chrysa Doré — Chaussures d'Enfants Depuis 1968</div>
+    <div class="hero-side-text">Chrysa Doré | Chaussures d'Enfants Depuis 1968</div>
   </section>
 
   <!-- Marquee -->
@@ -135,8 +126,8 @@
   <section class="collections" id="collections">
     <div class="section-header">
       <span class="section-label" data-animate>01 / Collections</span>
-      <h2 class="section-title" data-animate>Bộ Sưu Tập<br><em>Mùa Mới</em></h2>
-      <p class="section-desc" data-animate>Mỗi đôi giày được tạo nên với tình yêu thương và sự tỉ mỉ — bảo vệ đôi chân nhỏ bé, đồng hành cùng bé trên mọi bước đi.</p>
+      <h2 class="section-title" data-animate data-vi="Bộ Sưu Tập<br><em>Mùa Mới</em>" data-en="Collection<br><em>New Season</em>" data-zh="系列<br><em>新季</em>">Bộ Sưu Tập<br><em>Mùa Mới</em></h2>
+      <p class="section-desc" data-animate data-vi="Mỗi đôi giày được tạo nên với tình yêu thương và sự tỉ mỉ, bảo vệ đôi chân nhỏ bé, đồng hành cùng bé trên mọi bước đi." data-en="Each pair of shoes is crafted with love and meticulous care, protecting little feet and accompanying your child on every step." data-zh="每一双鞋都倾注了爱与匠心，守护小小的双脚，陪伴孩子的每一步。">Mỗi đôi giày được tạo nên với tình yêu thương và sự tỉ mỉ, bảo vệ đôi chân nhỏ bé, đồng hành cùng bé trên mọi bước đi.</p>
     </div>
     <div class="collections-grid">
       <!-- Collection 1 -->
@@ -151,8 +142,8 @@
         </div>
         <div class="collection-info">
           <h3>Lumière d'Or</h3>
-          <p>Giày da bê mùa hè — sandal và mules thủ công cho những kỳ nghỉ Riviera cùng gia đình.</p>
-          <a href="#" class="collection-link">
+          <p data-vi="Giày da bê mùa hè, sandal và mules thủ công cho những kỳ nghỉ Riviera cùng gia đình." data-en="Summer calfskin shoes, handcrafted sandals and mules for Riviera family holidays." data-zh="夏季小牛皮鞋履，手工凉鞋与穆勒鞋，适合家庭里维埃拉度假。">Giày da bê mùa hè, sandal và mules thủ công cho những kỳ nghỉ Riviera cùng gia đình.</p>
+          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
             Khám phá
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -170,8 +161,8 @@
         </div>
         <div class="collection-info">
           <h3>Nuit Éternelle</h3>
-          <p>Giày boot da đen cổ điển cho mùa thu đông — dáng Oxford và Derby cho các buổi lễ trang trọng.</p>
-          <a href="#" class="collection-link">
+          <p data-vi="Giày boot da đen cổ điển cho mùa thu đông, dáng Oxford và Derby cho các buổi lễ trang trọng." data-en="Classic black leather boots for autumn and winter, Oxford and Derby styles for formal occasions." data-zh="经典黑色皮靴，适合秋冬季节，牛津与德比款式适用于正式场合。">Giày boot da đen cổ điển cho mùa thu đông, dáng Oxford và Derby cho các buổi lễ trang trọng.</p>
+          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
             Khám phá
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -189,8 +180,8 @@
         </div>
         <div class="collection-info">
           <h3>Renaissance</h3>
-          <p>Bộ sưu tập giới hạn — giày da patina thủ công, khắc tên riêng cho từng gia đình.</p>
-          <a href="#" class="collection-link">
+          <p data-vi="Bộ sưu tập giới hạn, giày da patina thủ công, khắc tên riêng cho từng gia đình." data-en="Limited collection, handcrafted patina leather shoes, personalized engraving for each family." data-zh="限量系列，手工古旧皮革鞋履，为每个家庭定制刻字。">Bộ sưu tập giới hạn, giày da patina thủ công, khắc tên riêng cho từng gia đình.</p>
+          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
             Khám phá
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -203,7 +194,7 @@
   <section class="featured">
     <div class="section-header">
       <span class="section-label" data-animate>02 / Sélection</span>
-      <h2 class="section-title" data-animate>Tuyển Chọn<br><em>Cho Bé</em></h2>
+      <h2 class="section-title" data-animate data-vi="Tuyển Chọn<br><em>Cho Bé</em>" data-en="Curated<br><em>For Kids</em>" data-zh="精选<br><em>童鞋</em>">Tuyển Chọn<br><em>Cho Bé</em></h2>
     </div>
     <div class="featured-grid">
       <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-hc-001" data-product-name="Robe Dorée Impériale" data-product-price="28500" data-product-image="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" data-product-category="Haute Couture">
@@ -321,28 +312,28 @@
       </div>
       <div class="atelier-content">
         <span class="section-label" data-animate>03 / L'Atelier</span>
-        <h2 class="section-title" data-animate>Giày Da<br><em>Thủ Công</em></h2>
-        <p class="atelier-text" data-animate>
+        <h2 class="section-title" data-animate data-vi="Giày Da<br><em>Thủ Công</em>" data-en="Leather Shoes<br><em>Handcrafted</em>" data-zh="皮鞋<br><em>手工制作</em>">Giày Da<br><em>Thủ Công</em></h2>
+        <p class="atelier-text" data-animate data-vi="Tại xưởng Chrysa Doré, mỗi đôi giày da cho bé được hoàn thiện bởi bàn tay nghệ nhân bậc thầy. Da bê Ý mềm mại, khâu tay Goodyear welt truyền thống, đế cao su tự nhiên, tất cả để đôi chân nhỏ được nâng niu và bảo vệ trong từng bước đi khám phá thế giới." data-en="At the Chrysa Doré atelier, every pair of children's leather shoes is finished by master artisan hands. Soft Italian calfskin, traditional Goodyear welt hand-stitching, natural rubber soles, all to cherish and protect little feet on every step of discovery." data-zh="在Chrysa Doré工坊，每一双儿童皮鞋均由大师级工匠手工完成。柔软的意大利小牛皮，传统固特异手工缝制，天然橡胶鞋底，只为呵护与守护每一双小脚的探索之旅。">
           Tại xưởng Chrysa Doré, mỗi đôi giày da cho bé được hoàn thiện bởi bàn tay nghệ nhân bậc thầy.
-          Da bê Ý mềm mại, khâu tay Goodyear welt truyền thống, đế cao su tự nhiên —
+          Da bê Ý mềm mại, khâu tay Goodyear welt truyền thống, đế cao su tự nhiên,
           tất cả để đôi chân nhỏ được nâng niu và bảo vệ trong từng bước đi khám phá thế giới.
         </p>
         <div class="atelier-stats" data-animate>
           <div class="stat">
             <span class="stat-number">120+</span>
-            <span class="stat-label">Công đoạn<br>cho mỗi đôi giày</span>
+            <span class="stat-label" data-vi="Công đoạn<br>cho mỗi đôi giày" data-en="Steps<br>per pair" data-zh="工序<br>每双鞋">Công đoạn<br>cho mỗi đôi giày</span>
           </div>
           <div class="stat">
             <span class="stat-number">35</span>
-            <span class="stat-label">Nghệ nhân<br>da bậc thầy</span>
+            <span class="stat-label" data-vi="Nghệ nhân<br>da bậc thầy" data-en="Master<br>leather artisans" data-zh="皮革<br>大师工匠">Nghệ nhân<br>da bậc thầy</span>
           </div>
           <div class="stat">
             <span class="stat-number">1968</span>
-            <span class="stat-label">Năm thành lập<br>tại Paris</span>
+            <span class="stat-label" data-vi="Năm thành lập<br>tại Paris" data-en="Year founded<br>in Paris" data-zh="创立年份<br>巴黎">Năm thành lập<br>tại Paris</span>
           </div>
         </div>
         <a href="#" class="atelier-link" data-animate>
-          Tham Quan Xưởng Da
+          <span data-vi="Tham Quan Xưởng Da" data-en="Visit the Atelier" data-zh="参观工坊">Tham Quan Xưởng Da</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
@@ -351,57 +342,10 @@
     </div>
   </section>
 
-  <!-- Heritage / Brand Story -->
-  <section class="heritage" id="heritage">
-    <div class="heritage-bg"></div>
-    <div class="heritage-content">
-      <span class="section-label" data-animate>04 / Héritage</span>
-      <h2 class="heritage-title" data-animate>
-        "Mỗi bước chân nhỏ<br>
-        <em>đều đáng được nâng niu."</em>
-      </h2>
-      <p class="heritage-text" data-animate>
-        Chrysa Doré — từ tiếng Hy Lạp "Chrysa" (vàng ròng) và tiếng Pháp "Doré" (mạ vàng) —
-        ra đời năm 1968 tại Paris với một niềm tin giản dị: đôi chân đang lớn của trẻ xứng đáng
-        được chăm sóc bằng chất liệu tốt nhất và tay nghề tinh xảo nhất.
-        Mỗi đôi giày Chrysa Doré là tình yêu thương của cha mẹ gửi vào từng đường khâu.
-      </p>
-      <div class="heritage-values" data-animate>
-        <div class="value">
-          <div class="value-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          <h4>Héritage</h4>
-          <p>Da bê Ý chọn lọc, khâu tay Goodyear welt</p>
-        </div>
-        <div class="value">
-          <div class="value-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-          </div>
-          <h4>Enfance</h4>
-          <p>Thiết kế vì đôi chân đang lớn, an toàn tuyệt đối</p>
-        </div>
-        <div class="value">
-          <div class="value-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
-          </div>
-          <h4>Exclusivité</h4>
-          <p>Số lượng giới hạn, chất lượng không giới hạn</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Editorial / Lookbook -->
   <section class="editorial">
     <div class="section-header">
-      <span class="section-label" data-animate>05 / Éditorial</span>
+      <span class="section-label" data-animate>04 / Éditorial</span>
       <h2 class="section-title" data-animate>Le Monde<br><em>Chrysa Doré</em></h2>
     </div>
     <div class="editorial-grid">
@@ -439,26 +383,26 @@
   <section class="contact" id="contact">
     <div class="contact-inner">
       <div class="contact-left">
-        <span class="section-label" data-animate>06 / Contact</span>
-        <h2 class="section-title" data-animate>Kết Nối<br><em>Cùng Chúng Tôi</em></h2>
-        <p class="contact-text" data-animate>
+        <span class="section-label" data-animate>05 / Contact</span>
+        <h2 class="section-title" data-animate data-vi="Kết Nối<br><em>Cùng Chúng Tôi</em>" data-en="Connect<br><em>With Us</em>" data-zh="联系<br><em>我们</em>">Kết Nối<br><em>Cùng Chúng Tôi</em></h2>
+        <p class="contact-text" data-animate data-vi="Đăng ký để nhận lời mời độc quyền đo ni chân cho bé, quyền truy cập sớm vào các mẫu giày giới hạn, và dịch vụ khắc tên gia đình." data-en="Register to receive exclusive fitting invitations for your child, early access to limited edition styles, and family name engraving services." data-zh="注册即可获得专属儿童试鞋邀请、限量款式优先购买权，以及家族刻字服务。">
           Đăng ký để nhận lời mời độc quyền đo ni chân cho bé,
           quyền truy cập sớm vào các mẫu giày giới hạn, và dịch vụ khắc tên gia đình.
         </p>
         <form class="contact-form" data-animate>
           <div class="form-row">
             <div class="form-group">
-              <input type="text" placeholder="Họ và Tên" required>
+              <input type="text" placeholder="Họ và Tên" required data-vi="Họ và Tên" data-en="Full Name" data-zh="姓名">
             </div>
             <div class="form-group">
               <input type="email" placeholder="Email" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="tel" placeholder="Số Điện Thoại">
+            <input type="tel" placeholder="Số Điện Thoại" data-vi="Số Điện Thoại" data-en="Phone Number" data-zh="电话号码">
           </div>
           <button type="submit" class="form-submit">
-            <span>Đăng Ký Nhận Tin</span>
+            <span data-vi="Đăng Ký Nhận Tin" data-en="Subscribe" data-zh="订阅">Đăng Ký Nhận Tin</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -471,11 +415,11 @@
           <p>8 Avenue Montaigne<br>75008 Paris, France</p>
         </div>
         <div class="contact-info-block">
-          <h4>Showroom Việt Nam</h4>
+          <h4 data-vi="Showroom Việt Nam" data-en="Vietnam Showroom" data-zh="越南展厅">Showroom Việt Nam</h4>
           <p>Tầng 5, Landmark 81<br>Quận Bình Thạnh, TP.HCM</p>
         </div>
         <div class="contact-info-block">
-          <h4>Dịch Vụ Đo Ni Tận Nơi</h4>
+          <h4 data-vi="Dịch Vụ Đo Ni Tận Nơi" data-en="Home Fitting Service" data-zh="上门量脚服务">Dịch Vụ Đo Ni Tận Nơi</h4>
           <p>concierge@chrysadore.com<br>+33 1 42 68 00 00</p>
         </div>
         <div class="contact-social">
@@ -520,35 +464,35 @@
           <div class="footer-col">
             <h5>Maison</h5>
             <ul>
-              <li><a href="#">Di Sản</a></li>
+              <li><a href="story.html" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
               <li><a href="#">Atelier</a></li>
-              <li><a href="#">Nghệ Nhân</a></li>
-              <li><a href="#">Tuyển Dụng</a></li>
+              <li><a href="#" data-vi="Nghệ Nhân" data-en="Artisans" data-zh="工匠">Nghệ Nhân</a></li>
+              <li><a href="#" data-vi="Tuyển Dụng" data-en="Careers" data-zh="招聘">Tuyển Dụng</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h5>Collections</h5>
             <ul>
-              <li><a href="collection.html">Giày Tây</a></li>
+              <li><a href="collection.html" data-vi="Giày Tây" data-en="Dress Shoes" data-zh="正装鞋">Giày Tây</a></li>
               <li><a href="collection.html">Boot & Chelsea</a></li>
               <li><a href="collection.html">Sandal & Mules</a></li>
-              <li><a href="collection.html">Giày Trường Học</a></li>
+              <li><a href="collection.html" data-vi="Giày Trường Học" data-en="School Shoes" data-zh="校鞋">Giày Trường Học</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h5>Services</h5>
             <ul>
-              <li><a href="#">Đo Ni Tận Nơi</a></li>
-              <li><a href="#">Khắc Tên Gia Đình</a></li>
-              <li><a href="#">Quà Tặng Cao Cấp</a></li>
-              <li><a href="#">Bảo Dưỡng & Sửa Chữa</a></li>
+              <li><a href="#" data-vi="Đo Ni Tận Nơi" data-en="Home Fitting" data-zh="上门量脚">Đo Ni Tận Nơi</a></li>
+              <li><a href="#" data-vi="Khắc Tên Gia Đình" data-en="Family Engraving" data-zh="家族刻字">Khắc Tên Gia Đình</a></li>
+              <li><a href="#" data-vi="Quà Tặng Cao Cấp" data-en="Premium Gifts" data-zh="高端礼品">Quà Tặng Cao Cấp</a></li>
+              <li><a href="#" data-vi="Bảo Dưỡng & Sửa Chữa" data-en="Care & Repair" data-zh="保养与维修">Bảo Dưỡng & Sửa Chữa</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h5>Legal</h5>
             <ul>
-              <li><a href="#">Điều Khoản</a></li>
-              <li><a href="#">Bảo Mật</a></li>
+              <li><a href="#" data-vi="Điều Khoản" data-en="Terms" data-zh="条款">Điều Khoản</a></li>
+              <li><a href="#" data-vi="Bảo Mật" data-en="Privacy" data-zh="隐私">Bảo Mật</a></li>
               <li><a href="#">Cookies</a></li>
               <li><a href="#">Sitemap</a></li>
             </ul>
@@ -564,5 +508,6 @@
 
   <script src="script.js"></script>
   <script src="cart.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>

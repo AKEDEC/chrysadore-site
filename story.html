@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrysa Doré | Our Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="story.css">
+  <link rel="stylesheet" href="lang.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-chrysa">Chrysa</span>
+        <span class="logo-separator"></span>
+        <span class="logo-dore">Doré</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="collection.html" class="nav-link" data-hover="Bộ Sưu Tập" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+        <li><a href="story.html" class="nav-link active" data-hover="Our Story" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-hover="Liên Hệ" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon cart-icon" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="collection.html" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+      <li><a href="story.html" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
+      <li><a href="index.html#contact" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
+    </ul>
+  </div>
+
+  <!-- ======== HERO with Background Image ======== -->
+  <section class="story-hero">
+    <div class="story-hero-bg">
+      <img src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=3200" alt="" class="story-hero-img">
+      <div class="story-hero-overlay"></div>
+    </div>
+    <div class="story-hero-content">
+      <span class="story-eyebrow">Our Story</span>
+      <h1 class="story-hero-title">
+        <span class="story-title-line">Built to walk</span>
+        <span class="story-title-line story-title-accent"><em>your story.</em></span>
+      </h1>
+      <p class="story-hero-sub" data-vi="Câu chuyện về những bàn tay Việt, tạo nên đôi giày xứng đáng cho thế hệ tương lai." data-en="A story of Vietnamese hands, crafting shoes worthy of the next generation." data-zh="越南匠人之手的故事，为下一代打造值得拥有的鞋履。">
+        Câu chuyện về những bàn tay Việt, tạo nên đôi giày xứng đáng cho thế hệ tương lai.
+      </p>
+    </div>
+    <div class="story-scroll-hint">
+      <span data-vi="Khám phá" data-en="Explore" data-zh="探索">Khám phá</span>
+      <div class="story-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======== 01 PROLOGUE — Text + Image side-by-side ======== -->
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-chapter-label" data-animate>
+        <span class="chapter-num">01</span>
+        <span class="chapter-line"></span>
+        <span class="chapter-name" data-vi="Prologue" data-en="Prologue" data-zh="序章">Prologue</span>
+      </div>
+      <div class="story-split" data-animate>
+        <div class="story-split-text">
+          <blockquote class="story-blockquote">
+            <p data-vi="Tại sao những đôi giày do chính người Việt sản xuất,<br>lại chỉ xuất hiện trong những cửa hàng xa xỉ,<br>mang tên ngoại quốc, kể những câu chuyện xứ người?" data-en="Why do shoes made by Vietnamese hands<br>only appear in luxury stores<br>bearing foreign names, telling foreign stories?" data-zh="为什么由越南工匠亲手制作的鞋子，<br>却只出现在高端奢侈品店里，<br>贴着外国品牌，讲述着别人的故事？">Tại sao những đôi giày do chính người Việt sản xuất,<br>
+            lại chỉ xuất hiện trong những cửa hàng xa xỉ,<br>
+            mang tên ngoại quốc, kể những câu chuyện xứ người?</p>
+          </blockquote>
+          <p class="story-body" data-vi="Trong những nhà máy tại Việt Nam, những nghệ nhân lành nghề đã và đang tạo ra giày cho các thương hiệu danh tiếng nhất thế giới: Lacoste, Calvin Klein, MCM, G3." data-en="In factories across Vietnam, skilled artisans have been crafting shoes for the world's most prestigious brands: Lacoste, Calvin Klein, MCM, G3." data-zh="在越南各地的工厂里，技艺精湛的工匠们一直在为世界顶级品牌制作鞋履：Lacoste、Calvin Klein、MCM、G3。">
+            Trong những nhà máy tại Việt Nam, những nghệ nhân lành nghề đã và đang tạo ra giày cho
+            các thương hiệu danh tiếng nhất thế giới: Lacoste, Calvin Klein, MCM, G3.
+          </p>
+          <p class="story-body" data-vi="Nhưng khi trẻ em Việt Nam đến trường, các em lại mang những đôi giày nhập khẩu giá cao, hoặc những đôi giày sản xuất hàng loạt, thiếu sự chăm chút cho đôi chân đang lớn." data-en="But when Vietnamese children go to school, they wear expensive imports or mass-produced shoes that lack the care their growing feet deserve." data-zh="然而，当越南的孩子们去上学时，他们穿的却是昂贵的进口鞋或缺乏对成长中双脚呵护的量产鞋。">
+            Nhưng khi trẻ em Việt Nam đến trường, các em lại mang những đôi giày nhập khẩu giá cao,
+            hoặc những đôi giày sản xuất hàng loạt, thiếu sự chăm chút cho đôi chân đang lớn.
+          </p>
+        </div>
+        <div class="story-split-img">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/BTS25_Lifestyle.jpg?v=1764761346&width=860" alt="Atelier" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Text Break — Ombre ======== -->
+  <div class="story-text-break story-text-break-ombre" data-animate>
+    <div class="story-text-break-inner">
+      <p data-vi="Cùng đôi bàn tay. Cùng sự tỉ mỉ.<br>Cùng tiêu chuẩn chất lượng đẳng cấp quốc tế." data-en="The same hands. The same precision.<br>The same world-class quality standards." data-zh="同样的双手。同样的精细。<br>同样的国际顶级品质标准。">Cùng đôi bàn tay. Cùng sự tỉ mỉ.<br>Cùng tiêu chuẩn chất lượng đẳng cấp quốc tế.</p>
+    </div>
+  </div>
+
+  <!-- ======== 02 KHỞI NGUỒN + Tyler ======== -->
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-chapter-label" data-animate>
+        <span class="chapter-num">02</span>
+        <span class="chapter-line"></span>
+        <span class="chapter-name" data-vi="Khởi Nguồn" data-en="Origin" data-zh="起源">Khởi Nguồn</span>
+      </div>
+      <h2 class="story-section-title" data-animate data-vi="Chrysa Doré ra đời<br>từ một <em>nghịch lý</em>" data-en="Chrysa Doré was born<br>from a <em>paradox</em>" data-zh="Chrysa Doré 诞生于<br>一个<em>悖论</em>">
+        Chrysa Doré ra đời<br>từ một <em>nghịch lý</em>
+      </h2>
+      <div class="story-split" data-animate>
+        <div class="story-split-img story-split-img-portrait">
+          <img src="founder-tyler.jpg" alt="Tyler Ninh" loading="lazy">
+          <div class="founder-frame-accent"></div>
+        </div>
+        <div class="story-split-text">
+          <span class="founder-tag">Co-founder</span>
+          <h3 class="founder-name-title">Tyler Ninh</h3>
+          <p class="story-body" data-vi="Theo học cùng lúc ba ngành Software Engineering, Business Administration và Law tại RMIT và ĐH Luật TP.HCM. Tyler sáng lập GIMI Café, M'nong Plateau Resort, và đồng sáng lập independent label 29Label." data-en="Studying three majors simultaneously: Software Engineering, Business Administration, and Law at RMIT and HCMC University of Law. Tyler founded GIMI Café, M'nong Plateau Resort, and co-founded independent label 29Label." data-zh="同时攻读软件工程、工商管理和法学三个专业，就读于RMIT大学和胡志明市法律大学。Tyler创办了GIMI Café、M'nong Plateau Resort，并联合创立了独立品牌29Label。">
+            Theo học cùng lúc ba ngành Software Engineering, Business Administration
+            và Law tại RMIT và ĐH Luật TP.HCM.
+            Tyler sáng lập GIMI Café, M'nong Plateau Resort,
+            và đồng sáng lập independent label 29Label.
+          </p>
+          <p class="story-body" data-vi="Với tư duy brand strategy và khả năng biến creative concept thành hiện thực, Tyler mang đến Chrysa Doré tầm nhìn về một thương hiệu Việt đủ sức sánh ngang quốc tế." data-en="With a brand strategy mindset and the ability to turn creative concepts into reality, Tyler brings to Chrysa Doré a vision of a Vietnamese brand that can stand alongside the world's best." data-zh="凭借品牌战略思维和将创意概念转化为现实的能力，Tyler为Chrysa Doré带来了一个越南品牌比肩国际的愿景。">
+            Với tư duy brand strategy và khả năng biến creative concept
+            thành hiện thực, Tyler mang đến Chrysa Doré tầm nhìn về một thương hiệu Việt
+            đủ sức sánh ngang quốc tế.
+          </p>
+        </div>
+      </div>
+
+      <!-- Heritage Stats -->
+      <div class="story-stats" data-animate>
+        <div class="story-stat">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="stat-label">Manufacturing DNA</span>
+          <p data-vi="Sản xuất OEM/ODM cho Lacoste, CK, MCM, G3 và nhiều thương hiệu quốc tế" data-en="OEM/ODM manufacturing for Lacoste, CK, MCM, G3 and many international brands" data-zh="为Lacoste、CK、MCM、G3等众多国际品牌提供OEM/ODM生产">Sản xuất OEM/ODM cho Lacoste, CK, MCM, G3 và nhiều thương hiệu quốc tế</p>
+        </div>
+        <div class="story-stat">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <span class="stat-label">Quality Standard</span>
+          <p data-vi="Cùng dây chuyền, cùng kiểm soát chất lượng, cùng tiêu chuẩn xa xỉ quốc tế" data-en="Same production line, same quality control, same international luxury standards" data-zh="同一条生产线，同样的品控，同样的国际奢侈品标准">Cùng dây chuyền, cùng kiểm soát chất lượng, cùng tiêu chuẩn xa xỉ quốc tế</p>
+        </div>
+        <div class="story-stat">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <span class="stat-label">Full Vertical</span>
+          <p data-vi="Từ thiết kế, chọn nguyên liệu, sản xuất đến kiểm định chất lượng" data-en="From design, material selection, production to quality inspection" data-zh="从设计、选材、生产到质量检验">Từ thiết kế, chọn nguyên liệu, sản xuất đến kiểm định chất lượng</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Central Founders Quote ======== -->
+  <section class="story-section" style="padding: 5rem 0;">
+    <div class="story-container">
+      <div class="founders-central-quote" data-animate>
+        <blockquote class="founders-blockquote">
+          <span class="quote-mark-open">"</span>
+          <p data-vi="Chúng mình cũng từng là học sinh.<br>Chúng mình là nhà khởi nghiệp.<br>Và chúng mình muốn viết câu chuyện của riêng mình." data-en="We were once students too.<br>We are entrepreneurs.<br>And we want to write our own story." data-zh="我们也曾是学生。<br>我们是创业者。<br>我们想书写属于自己的故事。">
+            Chúng mình cũng từng là học sinh.<br>
+            Chúng mình là nhà khởi nghiệp.<br>
+            Và chúng mình muốn viết câu chuyện của riêng mình.
+          </p>
+          <span class="quote-mark-close">"</span>
+        </blockquote>
+        <div class="founders-byline-center">
+          <span class="byline-line"></span>
+          <span class="byline-text">Founders, Chrysa Doré</span>
+          <span class="byline-line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Text Break — Ombre 2 ======== -->
+  <div class="story-text-break story-text-break-ombre-reverse" data-animate>
+    <div class="story-text-break-inner">
+      <p data-vi="Mỗi bước chân nhỏ đều đáng được nâng niu." data-en="Every small step deserves to be cherished." data-zh="每一个小小的脚步，都值得被珍视。">Mỗi bước chân nhỏ đều đáng được nâng niu.</p>
+    </div>
+  </div>
+
+  <!-- ======== 03 TẦM NHÌN + Kiệt ======== -->
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-chapter-label" data-animate>
+        <span class="chapter-num">03</span>
+        <span class="chapter-line"></span>
+        <span class="chapter-name" data-vi="Tầm Nhìn" data-en="Vision" data-zh="愿景">Tầm Nhìn</span>
+      </div>
+      <h2 class="story-section-title" data-animate data-vi="Biến thẩm mỹ Việt<br>thành <em>niềm tự hào</em>" data-en="Turning Vietnamese aesthetics<br>into <em>a source of pride</em>" data-zh="将越南美学<br>化为<em>自豪之源</em>">
+        Biến thẩm mỹ Việt<br>thành <em>niềm tự hào</em>
+      </h2>
+      <div class="story-split story-split-reverse" data-animate>
+        <div class="story-split-img story-split-img-portrait">
+          <img src="founder-kiet-3.jpg" alt="Đình Kiệt" loading="lazy">
+          <div class="founder-frame-accent"></div>
+        </div>
+        <div class="story-split-text">
+          <span class="founder-tag">Co-founder</span>
+          <h3 class="founder-name-title">Đình Kiệt</h3>
+          <p class="story-body" data-vi="Dual degree Law và Business Administration tại ĐH Luật TP.HCM, CEI Fellowship tại Fulbright Vietnam, và đang incubate startup tại VinUniversity Incubator." data-en="Dual degree in Law and Business Administration at HCMC University of Law, CEI Fellowship at Fulbright Vietnam, and currently incubating a startup at VinUniversity Incubator." data-zh="在胡志明市法律大学攻读法学与工商管理双学位，获得Fulbright Vietnam的CEI Fellowship，目前在VinUniversity Incubator孵化创业项目。">
+            Dual degree Law và Business Administration tại ĐH Luật TP.HCM,
+            CEI Fellowship tại Fulbright Vietnam,
+            và đang incubate startup tại VinUniversity Incubator.
+          </p>
+          <p class="story-body" data-vi="1st Prize Startup Competition 2025 cấp thành phố, cultural startup partner của UNESCO, và strategic partner tại SIHUB. Kiệt tin rằng startup không chỉ là business, mà là tạo ra value cho cộng đồng từ chính bản sắc Việt." data-en="1st Prize at the 2025 City-level Startup Competition, cultural startup partner of UNESCO, and strategic partner at SIHUB. Kiệt believes startups are not just business, but a way to create value for the community from Vietnamese identity itself." data-zh="2025年市级创业大赛一等奖，UNESCO文化创业合作伙伴，SIHUB战略合作伙伴。Kiệt相信创业不仅是商业，更是从越南本土文化中为社区创造价值。">
+            1st Prize Startup Competition 2025 cấp thành phố,
+            cultural startup partner của UNESCO, và strategic partner tại SIHUB.
+            Kiệt tin rằng startup không chỉ là business,
+            mà là tạo ra value cho cộng đồng từ chính bản sắc Việt.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-split" data-animate style="margin-top: 4rem;">
+        <div class="story-split-text">
+          <p class="story-body" data-vi="Ở Hàn Quốc, học sinh tự hào chụp selfie với bộ đồng phục. Ở Nhật Bản, bộ Seifuku là biểu tượng văn hóa. Đồng phục không phải là gánh nặng. Đó là bản sắc." data-en="In South Korea, students proudly take selfies in their uniforms. In Japan, the Seifuku is a cultural icon. Uniforms are not a burden. They are identity." data-zh="在韩国，学生们自豪地穿着校服自拍。在日本，制服是文化象征。校服不是负担，而是身份的象征。">
+            Ở Hàn Quốc, học sinh tự hào chụp selfie với bộ đồng phục. Ở Nhật Bản,
+            bộ Seifuku là biểu tượng văn hóa. Đồng phục không phải là gánh nặng.
+            Đó là bản sắc.
+          </p>
+          <p class="story-body" data-vi="Chrysa Doré tin rằng thẩm mỹ Việt Nam xứng đáng sánh đôi với bất kỳ cường quốc nào. Khi một học sinh nhìn xuống đôi giày và cảm thấy tự hào, cảm xúc ấy sẽ lớn dần theo năm tháng, trở thành sự tự tin, thành bản sắc văn hóa." data-en="Chrysa Doré believes Vietnamese aesthetics deserve to stand alongside any leading nation. When a student looks down at their shoes and feels proud, that feeling grows over the years into confidence, into cultural identity." data-zh="Chrysa Doré相信越南美学配得上与任何强国并肩。当学生低头看到自己的鞋子并感到自豪时，这份感情会随着岁月成长为自信，成为文化认同。">
+            Chrysa Doré tin rằng thẩm mỹ Việt Nam xứng đáng sánh đôi với bất kỳ cường quốc nào.
+            Khi một học sinh nhìn xuống đôi giày và cảm thấy tự hào, cảm xúc ấy sẽ lớn dần
+            theo năm tháng, trở thành sự tự tin, thành bản sắc văn hóa.
+          </p>
+          <div class="story-vision-quote">
+            <div class="vision-quote-mark">"</div>
+            <p data-vi="Nếu đồng phục học sinh nước mình cũng đẹp như vậy, mình sẽ tự hào lắm." data-en="If our school uniforms were this beautiful, I would be so proud." data-zh="如果我们的校服也能这么好看，我会非常自豪。">Nếu đồng phục học sinh nước mình cũng đẹp như vậy, mình sẽ tự hào lắm.</p>
+          </div>
+        </div>
+        <div class="story-split-img">
+          <img src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Adult_Mules.jpg?v=1773833405&width=3200" alt="Vision" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Text Break — Ombre 3 ======== -->
+  <div class="story-text-break story-text-break-ombre" data-animate>
+    <div class="story-text-break-inner">
+      <p data-vi="Đôi giày không chỉ bảo vệ đôi chân.<br>Đôi giày kể câu chuyện của người mang nó." data-en="Shoes do more than protect feet.<br>They tell the story of the one who wears them." data-zh="鞋子不仅保护双脚。<br>它们讲述穿着者的故事。">Đôi giày không chỉ bảo vệ đôi chân.<br>Đôi giày kể câu chuyện của người mang nó.</p>
+    </div>
+  </div>
+
+  <!-- ======== 04 EMBER ======== -->
+  <section class="story-section story-ember-section">
+    <div class="story-container">
+      <div class="story-chapter-label" data-animate>
+        <span class="chapter-num">04</span>
+        <span class="chapter-line"></span>
+        <span class="chapter-name" data-vi="Người Bạn Đồng Hành" data-en="The Companion" data-zh="同行伙伴">Người Bạn Đồng Hành</span>
+      </div>
+      <h2 class="story-section-title" data-animate data-vi="Ember<br><em>The Companion</em>" data-en="Ember<br><em>The Companion</em>" data-zh="Ember<br><em>忠实伙伴</em>">
+        Ember<br><em>The Companion</em>
+      </h2>
+      <div class="story-split story-split-reverse" data-animate>
+        <div class="story-split-img ember-illustration">
+          <svg class="ember-rabbit-svg" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ears -->
+            <ellipse cx="75" cy="50" rx="18" ry="45" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <ellipse cx="125" cy="50" rx="18" ry="45" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <ellipse cx="75" cy="50" rx="10" ry="30" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/>
+            <ellipse cx="125" cy="50" rx="10" ry="30" stroke="currentColor" stroke-width="0.5" opacity="0.3" fill="none"/>
+            <!-- Head -->
+            <circle cx="100" cy="115" r="40" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <!-- Eyes -->
+            <circle cx="87" cy="108" r="4" fill="currentColor" opacity="0.6"/>
+            <circle cx="113" cy="108" r="4" fill="currentColor" opacity="0.6"/>
+            <!-- Nose -->
+            <ellipse cx="100" cy="120" rx="3" ry="2" fill="currentColor" opacity="0.4"/>
+            <!-- Body -->
+            <ellipse cx="100" cy="190" rx="45" ry="55" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <!-- Feet -->
+            <ellipse cx="75" cy="240" rx="20" ry="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+            <ellipse cx="125" cy="240" rx="20" ry="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="story-split-text">
+          <p class="story-body" data-vi="Mỗi thương hiệu lớn đều có một linh hồn. Chrysa Doré chọn một người bạn: chú thỏ Ember. Không phải mascot in trên bao bì, mà là người bạn bước cùng mỗi em nhỏ." data-en="Every great brand has a soul. Chrysa Doré chose a friend: Ember the rabbit. Not a mascot printed on packaging, but a companion who walks alongside every child." data-zh="每个伟大的品牌都有灵魂。Chrysa Doré选择了一位朋友：小兔Ember。不是印在包装上的吉祥物，而是陪伴每个孩子一起前行的伙伴。">
+            Mỗi thương hiệu lớn đều có một linh hồn. Chrysa Doré chọn một người bạn:
+            chú thỏ Ember. Không phải mascot in trên bao bì, mà là người bạn bước cùng mỗi em nhỏ.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ember Qualities -->
+      <div class="ember-qualities" data-animate>
+        <div class="ember-quality">
+          <div class="ember-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h4 data-vi="Nhanh nhẹn" data-en="Agile" data-zh="敏捷">Nhanh nhẹn</h4>
+          <p data-vi="Như bước chân của các em trên sân trường" data-en="Like children's footsteps across the schoolyard" data-zh="如同孩子们在校园里奔跑的脚步">Như bước chân của các em trên sân trường</p>
+        </div>
+        <div class="ember-quality">
+          <div class="ember-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h4 data-vi="Thân thiện" data-en="Friendly" data-zh="友善">Thân thiện</h4>
+          <p data-vi="Không xa cách, không đáng sợ. Là một người bạn" data-en="Not distant, not intimidating. A true friend" data-zh="不疏远，不可怕。是一位真正的朋友">Không xa cách, không đáng sợ. Là một người bạn</p>
+        </div>
+        <div class="ember-quality">
+          <div class="ember-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 01-3.46 0"/>
+            </svg>
+          </div>
+          <h4 data-vi="Bền bỉ" data-en="Resilient" data-zh="坚韧">Bền bỉ</h4>
+          <p data-vi="Luôn đứng dậy sau mỗi lần vấp ngã, như các em" data-en="Always gets back up after every stumble, just like you" data-zh="每次跌倒后总会重新站起来，就像你一样">Luôn đứng dậy sau mỗi lần vấp ngã, như các em</p>
+        </div>
+        <div class="ember-quality">
+          <div class="ember-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+          </div>
+          <h4 data-vi="Hừng hực" data-en="Glowing" data-zh="炽热">Hừng hực</h4>
+          <p data-vi="Ember là hòn than đang cháy, ấm áp và kiên định" data-en="Ember is a burning coal, warm and steadfast" data-zh="Ember是一块燃烧的炭，温暖而坚定">Ember là hòn than đang cháy, ấm áp và kiên định</p>
+        </div>
+      </div>
+
+      <div class="ember-promise" data-animate>
+        <p class="ember-promise-text">
+          <em data-vi="&quot;Mình sẽ cùng bạn trên mỗi bước chân. Có thể bạn sẽ vấp ngã, nhưng chẳng sao cả. Chúng mình sẽ cùng đứng lên, bước tiếp.&quot;" data-en="&quot;I will walk with you every step of the way. You might stumble, but that is okay. We will get back up and keep going together.&quot;" data-zh="&quot;我会陪你走过每一步。你可能会跌倒，但没关系。我们会一起站起来，继续前行。&quot;">"Mình sẽ cùng bạn trên mỗi bước chân.
+          Có thể bạn sẽ vấp ngã, nhưng chẳng sao cả.
+          Chúng mình sẽ cùng đứng lên, bước tiếp."</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Leaf Section ======== -->
+  <section class="story-section story-leaf-section">
+    <div class="story-container">
+      <div class="story-leaf-centered" data-animate>
+        <div class="leaf-visual">
+          <svg class="leaf-svg" width="80" height="120" viewBox="0 0 80 120" fill="none">
+            <path d="M40 10 C20 30, 5 60, 15 90 C20 100, 30 110, 40 115 C50 110, 60 100, 65 90 C75 60, 60 30, 40 10Z"
+                  stroke="currentColor" stroke-width="1" fill="none" class="leaf-path"/>
+            <path d="M40 20 L40 100" stroke="currentColor" stroke-width="0.5" opacity="0.5"/>
+            <path d="M40 40 L25 55" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+            <path d="M40 55 L55 70" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+            <path d="M40 70 L28 82" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+          </svg>
+        </div>
+        <h3 class="leaf-title" data-vi="Chiếc lá không phải trang trí" data-en="The leaf is not decoration" data-zh="叶子不是装饰">Chiếc lá không phải trang trí</h3>
+        <p class="story-body" data-vi="Chiếc lá bên cạnh Ember là lời hứa với hành tinh mà thế hệ này sẽ thừa kế. Mỗi lựa chọn nguyên liệu, mỗi quy trình sản xuất đều hướng đến sự bền vững." data-en="The leaf beside Ember is a promise to the planet this generation will inherit. Every material choice, every production process is guided by sustainability." data-zh="Ember身旁的叶子是对这一代人将继承的地球的承诺。每一次材料选择、每一道生产工序都以可持续发展为导向。">
+          Chiếc lá bên cạnh Ember là lời hứa với hành tinh mà thế hệ này sẽ thừa kế.
+          Mỗi lựa chọn nguyên liệu, mỗi quy trình sản xuất đều hướng đến sự bền vững.
+        </p>
+        <p class="story-body leaf-text-accent" data-vi="Một đứa trẻ là một hạt giống đang lớn thành cây. Chúng mình nhìn thấy các bạn đang lớn lên, và chúng mình lớn lên cùng các bạn." data-en="A child is a seed growing into a tree. We see you growing, and we grow with you." data-zh="每个孩子都是一颗正在成长为大树的种子。我们看到你们在成长，我们与你们一同成长。">
+          Một đứa trẻ là một hạt giống đang lớn thành cây.
+          Chúng mình nhìn thấy các bạn đang lớn lên, và chúng mình lớn lên cùng các bạn.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 05 FIVE PILLARS ======== -->
+  <section class="story-section story-pillars-section">
+    <div class="story-container">
+      <div class="story-chapter-label" data-animate>
+        <span class="chapter-num">05</span>
+        <span class="chapter-line"></span>
+        <span class="chapter-name" data-vi="Năm Trụ Cột" data-en="Five Pillars" data-zh="五大支柱">Năm Trụ Cột</span>
+      </div>
+      <h2 class="story-section-title" data-animate data-vi="Những giá trị<br><em>định hình chúng mình</em>" data-en="The values that<br><em>define who we are</em>" data-zh="塑造我们的<br><em>核心价值</em>">
+        Những giá trị<br><em>định hình chúng mình</em>
+      </h2>
+
+      <div class="pillars-grid" data-animate>
+        <div class="pillar-card">
+          <span class="pillar-num">I</span>
+          <h4>Héritage</h4>
+          <p data-vi="Chúng mình không tự nhận chất lượng. Chúng mình thừa kế nó. Cùng đôi tay tạo nên giày cho Lacoste và Calvin Klein." data-en="We do not claim quality. We inherit it. The same hands that craft shoes for Lacoste and Calvin Klein." data-zh="我们不自称品质。我们传承品质。同样的双手，为Lacoste和Calvin Klein打造鞋履。">Chúng mình không tự nhận chất lượng. Chúng mình thừa kế nó. Cùng đôi tay tạo nên giày cho Lacoste và Calvin Klein.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-num">II</span>
+          <h4>Empathy</h4>
+          <p data-vi="Chúng mình cũng từng là học sinh. Chúng mình nhớ cảm giác muốn một đôi giày đẹp hơn, thoải mái hơn, đáng tự hào hơn." data-en="We were students once too. We remember wanting shoes that were more beautiful, more comfortable, more worthy of pride." data-zh="我们也曾是学生。我们记得想要一双更美、更舒适、更值得骄傲的鞋子的感觉。">Chúng mình cũng từng là học sinh. Chúng mình nhớ cảm giác muốn một đôi giày đẹp hơn, thoải mái hơn, đáng tự hào hơn.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-num">III</span>
+          <h4>Pride</h4>
+          <p data-vi="Thẩm mỹ Việt xứng đáng sánh ngang với Hàn, Nhật, châu Âu. Không bằng lời nói, mà bằng sản phẩm." data-en="Vietnamese aesthetics deserve to stand alongside Korea, Japan, and Europe. Not through words, but through products." data-zh="越南美学配得上与韩国、日本、欧洲并肩。不是靠言语，而是靠产品。">Thẩm mỹ Việt xứng đáng sánh ngang với Hàn, Nhật, châu Âu. Không bằng lời nói, mà bằng sản phẩm.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-num">IV</span>
+          <h4>Companionship</h4>
+          <p data-vi="Ember đi cùng bạn trên mỗi bước chân. Đôi giày không chỉ là phụ kiện, mà là người bạn thân nhất." data-en="Ember walks with you every step. Shoes are not just accessories, they are your closest companion." data-zh="Ember陪你走过每一步。鞋子不仅是配饰，更是你最亲密的伙伴。">Ember đi cùng bạn trên mỗi bước chân. Đôi giày không chỉ là phụ kiện, mà là người bạn thân nhất.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-num">V</span>
+          <h4>Sustainability</h4>
+          <p data-vi="Chiếc lá không phải trang trí. Sản xuất xanh, nguyên liệu bền vững, vì thế hệ sẽ thừa kế trái đất." data-en="The leaf is not decoration. Green production, sustainable materials, for the generation that will inherit the earth." data-zh="叶子不是装饰。绿色生产，可持续材料，为将继承地球的一代人。">Chiếc lá không phải trang trí. Sản xuất xanh, nguyên liệu bền vững, vì thế hệ sẽ thừa kế trái đất.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA ======== -->
+  <section class="story-cta story-cta-ombre">
+    <div class="story-container">
+      <div class="story-cta-inner" data-animate>
+        <span class="story-cta-label">Built to walk your story</span>
+        <a href="collection.html" class="story-cta-btn">
+          <span data-vi="Khám Phá Bộ Sưu Tập" data-en="Explore the Collection" data-zh="探索系列">Khám Phá Bộ Sưu Tập</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="story-footer">
+    <div class="story-container">
+      <div class="story-footer-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-chrysa">Chrysa</span>
+          <span class="logo-separator"></span>
+          <span class="logo-dore">Doré</span>
+        </a>
+        <p class="story-footer-copy" data-vi="&copy; 2026 Chrysa Doré. Tất cả quyền được bảo lưu." data-en="&copy; 2026 Chrysa Doré. All rights reserved." data-zh="&copy; 2026 Chrysa Doré. 保留所有权利。">&copy; 2026 Chrysa Doré. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="lang.js"></script>
+  <script>
+    // Story-specific parallax
+    const storyHero = document.querySelector('.story-hero-content');
+    if (storyHero) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY < window.innerHeight) {
+          const progress = window.scrollY / window.innerHeight;
+          storyHero.style.transform = `translateY(${window.scrollY * 0.25}px)`;
+          storyHero.style.opacity = 1 - progress * 1.2;
+        }
+      }, { passive: true });
+    }
+
+    // (manifesto removed)
+
+    // Leaf SVG draw animation
+    const leafPath = document.querySelector('.leaf-path');
+    if (leafPath) {
+      const length = leafPath.getTotalLength();
+      leafPath.style.strokeDasharray = length;
+      leafPath.style.strokeDashoffset = length;
+      const leafObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            leafPath.style.transition = 'stroke-dashoffset 2s ease-in-out';
+            leafPath.style.strokeDashoffset = '0';
+            leafObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      leafObserver.observe(leafPath);
+    }
+  </script>
+
+</body>
+</html>
