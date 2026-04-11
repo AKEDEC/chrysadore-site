@@ -4,32 +4,22 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---------- Theme Toggle ----------
-  const themeToggle = document.getElementById('themeToggle');
-  const savedTheme = localStorage.getItem('chrysadore-theme');
-  if (savedTheme === 'light') {
-    document.body.classList.add('light-mode');
-  }
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      const isLight = document.body.classList.contains('light-mode');
-      localStorage.setItem('chrysadore-theme', isLight ? 'light' : 'dark');
-    });
-  }
+  // Theme: dark mode only (no toggle)
 
   // ---------- Preloader ----------
   const preloader = document.getElementById('preloader');
-  window.addEventListener('load', () => {
+  if (preloader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        preloader.classList.add('hidden');
+      }, 2200);
+    });
+
+    // Fallback: hide preloader after 4s max
     setTimeout(() => {
       preloader.classList.add('hidden');
-    }, 2200);
-  });
-
-  // Fallback: hide preloader after 4s max
-  setTimeout(() => {
-    preloader.classList.add('hidden');
-  }, 4000);
+    }, 4000);
+  }
 
   // ---------- Custom Cursor ----------
   const cursor = document.getElementById('cursor');
@@ -148,14 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- Parallax Effect on Hero ----------
   const heroContent = document.querySelector('.hero-content');
   const heroScroll = document.querySelector('.hero-scroll');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY < window.innerHeight) {
-      const progress = window.scrollY / window.innerHeight;
-      heroContent.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-      heroContent.style.opacity = 1 - progress;
-      heroScroll.style.opacity = 1 - progress * 3;
-    }
-  }, { passive: true });
+  if (heroContent && heroScroll) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < window.innerHeight) {
+        const progress = window.scrollY / window.innerHeight;
+        heroContent.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+        heroContent.style.opacity = 1 - progress;
+        heroScroll.style.opacity = 1 - progress * 3;
+      }
+    }, { passive: true });
+  }
 
   // ---------- Stat Counter Animation ----------
   const stats = document.querySelectorAll('.stat-number');

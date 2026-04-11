@@ -1,0 +1,128 @@
+/* ========================================
+   Chrysa Dore Language Switcher Widget
+   ======================================== */
+
+.lang-widget {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 9999;
+  font-family: var(--font-sans, 'Jost', 'Be Vietnam Pro', sans-serif);
+}
+
+/* Floating Button */
+.lang-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold, #1F6B43);
+  background: var(--gold-dark, #0E3A24);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(14, 58, 36, 0.25);
+}
+
+.lang-btn:hover {
+  background: var(--gold, #1F6B43);
+  transform: scale(1.08);
+  box-shadow: 0 4px 20px rgba(14, 58, 36, 0.35);
+}
+
+/* Dropdown */
+.lang-dropdown {
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  left: 0;
+  min-width: 160px;
+  background: var(--gold-dark, #0E3A24);
+  border: 1px solid var(--gold, #1F6B43);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.lang-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.6rem 1.1rem;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-align: left;
+}
+
+.lang-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.lang-option.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+.lang-option.active::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold-light, #2FA565);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.lang-option-code {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  width: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .lang-widget {
+    bottom: 1.2rem;
+    left: 1.2rem;
+  }
+
+  .lang-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+
+  .lang-dropdown {
+    min-width: 148px;
+  }
+}

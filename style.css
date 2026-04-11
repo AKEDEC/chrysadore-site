@@ -597,9 +597,10 @@ img {
 /* ---------- Marquee ---------- */
 .marquee {
   padding: 1.5rem 0;
-  border-top: 1px solid rgba(47, 165, 101, 0.1);
-  border-bottom: 1px solid rgba(47, 165, 101, 0.1);
+  border-top: 1px solid rgba(47, 165, 101, 0.15);
+  border-bottom: 1px solid rgba(47, 165, 101, 0.15);
   overflow: hidden;
+  background: linear-gradient(90deg, var(--black) 0%, rgba(14, 58, 36, 0.08) 50%, var(--black) 100%);
 }
 
 .marquee-track {
@@ -661,7 +662,10 @@ img {
 
 .section-title em {
   font-style: italic;
-  color: var(--gold);
+  background: var(--emerald-ombre);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-desc {
@@ -781,7 +785,7 @@ img {
 
 /* ---------- Featured Products ---------- */
 .featured {
-  background: var(--black-soft);
+  background: linear-gradient(180deg, var(--black-soft) 0%, rgba(14, 58, 36, 0.08) 50%, var(--black-soft) 100%);
 }
 
 .featured-grid {
@@ -1170,7 +1174,7 @@ img {
 
 /* ---------- Editorial ---------- */
 .editorial {
-  background: var(--black);
+  background: linear-gradient(180deg, var(--black) 0%, rgba(14, 58, 36, 0.12) 50%, var(--black) 100%);
 }
 
 .editorial-grid {
@@ -1252,7 +1256,7 @@ img {
 /* ---------- Contact ---------- */
 .contact {
   padding: 10rem 0;
-  background: var(--black-soft);
+  background: linear-gradient(180deg, var(--black-soft) 0%, rgba(14, 58, 36, 0.1) 50%, var(--black-soft) 100%);
 }
 
 .contact-inner {
@@ -1604,304 +1608,7 @@ img {
   height: 20px;
 }
 
-.theme-toggle .icon-sun {
-  display: none;
-}
-
-.theme-toggle .icon-moon {
-  display: block;
-}
-
-body.light-mode .theme-toggle .icon-sun {
-  display: block;
-}
-
-body.light-mode .theme-toggle .icon-moon {
-  display: none;
-}
-
-/* ---------- Light Mode ---------- */
-body.light-mode {
-  background: #FAFAF8;
-  color: var(--black);
-}
-
-body.light-mode .nav.scrolled {
-  background: rgba(250, 250, 248, 0.92);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-}
-
-body.light-mode .nav.scrolled .nav-link,
-body.light-mode .nav.scrolled .nav-icon {
-  color: var(--black);
-}
-
-body.light-mode .nav.scrolled .nav-menu-btn span {
-  background: var(--black);
-}
-
-body.light-mode .nav.scrolled .nav-logo .logo-chrysa {
-  color: var(--black);
-}
-
-/* Nav at top of page (over hero) — keep light text in light mode since hero is dark */
-body.light-mode .nav:not(.scrolled) .nav-link,
-body.light-mode .nav:not(.scrolled) .nav-icon {
-  color: var(--white);
-}
-
-body.light-mode .nav:not(.scrolled) .nav-menu-btn span {
-  background: var(--white);
-}
-
-body.light-mode .nav:not(.scrolled) .nav-logo .logo-chrysa {
-  color: var(--white);
-}
-
-body.light-mode .mobile-menu {
-  background: #FAFAF8;
-}
-
-body.light-mode .mobile-menu-links a {
-  color: var(--black);
-}
-
-/* Hero in light mode — mirror the dark-mode look exactly so the homepage feels consistent */
-body.light-mode .hero-bg {
-  background: #0A0A0A;
-}
-
-body.light-mode .hero-bg-img {
-  opacity: 0.5;
-}
-
-body.light-mode .hero-bg::before {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(0, 0, 0, 0.4) 0%, transparent 75%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.2) 40%, rgba(10, 10, 10, 0.2) 60%, rgba(10, 10, 10, 0.6) 100%);
-}
-
-body.light-mode .hero-overlay {
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(255, 255, 255, 0.01) 2px,
-      rgba(255, 255, 255, 0.01) 4px
-    );
-}
-
-body.light-mode .hero-content {
-  color: var(--white);
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), 0 0 60px rgba(0, 0, 0, 0.5);
-}
-
-body.light-mode .hero-title,
-body.light-mode .hero-title-line {
-  color: var(--white);
-}
-
-body.light-mode .hero-title-italic {
-  color: var(--gold);
-  background: var(--emerald-ombre);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-body.light-mode .hero-subtitle {
-  color: var(--grey-light);
-  text-shadow: none;
-}
-
-body.light-mode .hero-eyebrow {
-  color: var(--gold-light);
-}
-
-body.light-mode .hero-cta {
-  border-color: var(--gold-light);
-  color: var(--gold-light);
-}
-
-body.light-mode .hero-cta:hover {
-  background: var(--gold);
-  color: #fff;
-}
-
-body.light-mode .hero-scroll span {
-  color: var(--grey);
-  text-shadow: none;
-}
-
-body.light-mode .hero-side-text {
-  color: var(--grey);
-  text-shadow: none;
-}
-
-body.light-mode .marquee {
-  border-color: rgba(0, 0, 0, 0.08);
-}
-
-body.light-mode .marquee-track span {
-  color: #666;
-}
-
-body.light-mode .section-desc,
-body.light-mode .collection-info p,
-body.light-mode .atelier-text,
-body.light-mode .heritage-text,
-body.light-mode .contact-text {
-  color: #333;
-}
-
-body.light-mode .section-label {
-  color: var(--gold-dark);
-}
-
-body.light-mode .section-title em {
-  color: var(--gold-dark);
-}
-
-body.light-mode .collection-link {
-  color: var(--gold-dark);
-}
-
-body.light-mode .product-category {
-  color: var(--gold-dark);
-}
-
-body.light-mode .stat-number {
-  color: var(--gold-dark);
-}
-
-body.light-mode .atelier-link {
-  color: var(--gold-dark);
-  border-color: rgba(6, 77, 31, 0.3);
-}
-
-body.light-mode .heritage-title em {
-  color: var(--gold-dark);
-}
-
-body.light-mode .collection-info h3,
-body.light-mode .section-title {
-  color: var(--black);
-}
-
-body.light-mode .collection-season {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-body.light-mode .featured {
-  background: #F0EDE8;
-}
-
-body.light-mode .product-info .product-name {
-  color: var(--black);
-}
-
-body.light-mode .product-price {
-  color: #333;
-}
-
-body.light-mode .product-action-btn {
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(0, 0, 0, 0.1);
-  color: var(--black);
-}
-
-body.light-mode .product-action-btn:hover {
-  background: var(--gold);
-  color: #fff;
-  border-color: var(--gold);
-}
-
-body.light-mode .atelier-img-placeholder {
-  background: #E8E4DD;
-}
-
-body.light-mode .atelier-overlay-text {
-  color: rgba(11, 110, 47, 0.15);
-}
-
-body.light-mode .stat-label {
-  color: #555;
-}
-
-body.light-mode .heritage-bg {
-  background:
-    radial-gradient(ellipse 70% 50% at 50% 50%, rgba(11, 110, 47, 0.04) 0%, transparent 70%),
-    linear-gradient(180deg, #F0EDE8 0%, #FAFAF8 50%, #F0EDE8 100%);
-}
-
-body.light-mode .heritage-title {
-  color: var(--black);
-}
-
-body.light-mode .value {
-  border-color: rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.5);
-}
-
-body.light-mode .value:hover {
-  border-color: rgba(11, 110, 47, 0.3);
-  background: rgba(255, 255, 255, 0.8);
-}
-
-body.light-mode .value h4 {
-  color: var(--black);
-}
-
-body.light-mode .value p {
-  color: #555;
-}
-
-body.light-mode .editorial {
-  background: #FAFAF8;
-}
-
-body.light-mode .editorial-placeholder {
-  background: #E8E4DD;
-}
-
-body.light-mode .contact {
-  background: #F0EDE8;
-}
-
-body.light-mode .form-group input {
-  color: var(--black);
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-body.light-mode .form-group input::placeholder {
-  color: #999;
-}
-
-body.light-mode .form-group input:focus {
-  border-color: var(--gold);
-}
-
-body.light-mode .form-submit {
-  color: #fff;
-}
-
-body.light-mode .form-submit:hover {
-  background: transparent;
-  color: var(--gold);
-}
-
-body.light-mode .contact-info-block p {
-  color: #333;
-}
-
-body.light-mode .contact-info-block h4 {
-  color: var(--gold-dark);
-}
-
-body.light-mode .footer-col h5 {
-  color: var(--gold-dark);
-}
+/* Light mode removed: dark mode only */
 
 body.light-mode .social-link {
   border-color: rgba(0, 0, 0, 0.1);
