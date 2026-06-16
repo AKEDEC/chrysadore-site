@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robe Dorée Impériale — Chrysa Doré</title>
-  <meta name="description" content="Robe Dorée Impériale — sản phẩm cao cấp từ Chrysa Doré.">
-  <meta property="og:title" content="Robe Dorée Impériale — Chrysa Doré">
-  <meta property="og:description" content="Sản phẩm cao cấp từ Chrysa Doré — giày học sinh mang bản sắc Việt.">
+  <title>Giày Lười Đen | Chrysa Doré</title>
+  <meta name="description" content="Giày Lười Đen : giày lười da thật khâu tay của Chrysa Doré. Da thật, khâu tay tại Việt Nam. Walk Your Story.">
+  <meta property="og:title" content="Giày Lười Đen | Chrysa Doré">
+  <meta property="og:description" content="Giày lười mocassin da thật, khâu tay, dáng thanh lịch vượt thời gian từ Chrysa Doré.">
   <meta property="og:type" content="product">
   <meta property="og:url" content="https://chrysadore.com/product.html">
-  <meta name="theme-color" content="#1a1a1a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-  <link rel="preconnect" href="https://www.kickers.co.uk" crossorigin>
+  <meta property="og:image" content="https://chrysadore.com/assets/products/mocassin-noir-1.webp">
+  <meta name="theme-color" content="#14110C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="dns-prefetch" href="https://www.kickers.co.uk">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="product.css">
   <link rel="stylesheet" href="cart.css">
@@ -36,30 +35,22 @@
         <span class="logo-dore">Doré</span>
       </a>
       <ul class="nav-links">
-        <li><a href="collection.html" class="nav-link">Bộ Sưu Tập</a></li>
-        <li><a href="story.html" class="nav-link">Our Story</a></li>
-        <li><a href="index.html#contact" class="nav-link">Liên Hệ</a></li>
+        <li><a href="collection.html" class="nav-link" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+        <li><a href="story.html" class="nav-link" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-          </svg>
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-          </svg>
-        </button>
-        <button class="nav-icon" aria-label="Search">
+        <button class="nav-icon" aria-label="Tìm kiếm">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
           </svg>
         </button>
-        <button class="nav-icon" aria-label="Wishlist">
+        <button class="nav-icon" aria-label="Yêu thích">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
         </button>
-        <button class="nav-icon cart-icon" aria-label="Cart">
+        <button class="nav-icon cart-icon" aria-label="Giỏ hàng">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
           </svg>
@@ -72,14 +63,23 @@
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="collection.html" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+      <li><a href="story.html" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
+      <li><a href="index.html#contact" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
+    </ul>
+  </div>
+
   <!-- Breadcrumb -->
   <div class="breadcrumb">
     <div class="breadcrumb-inner">
-      <a href="index.html">Trang Chủ</a>
+      <a href="index.html" data-vi="Trang Chủ" data-en="Home" data-zh="首页">Trang Chủ</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="#">Haute Couture</a>
+      <a href="collection.html" data-vi="Giày Lười (Mocassin)" data-en="The Mocassin" data-zh="莫卡辛 (Mocassin)">Giày Lười (Mocassin)</a>
       <span class="breadcrumb-sep">/</span>
-      <span class="breadcrumb-current">Robe Dorée Impériale</span>
+      <span class="breadcrumb-current">Giày Lười Đen</span>
     </div>
   </div>
 
@@ -90,26 +90,26 @@
       <div class="pd-gallery">
         <div class="pd-gallery-main">
           <div class="pd-main-img active" id="mainImg">
-            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="Robe Dorée Impériale" id="mainImage" width="440" height="440" fetchpriority="high" decoding="async">
+            <img src="assets/products/mocassin-noir-1.webp" alt="Giày Lười Đen" id="mainImage" width="640" height="640" fetchpriority="high" decoding="async">
           </div>
-          <button class="pd-zoom-btn" id="zoomBtn" aria-label="Zoom">
+          <button class="pd-zoom-btn" id="zoomBtn" aria-label="Phóng to hình ảnh">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/>
             </svg>
           </button>
         </div>
         <div class="pd-thumbs">
-          <button class="pd-thumb active" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440">
-            <img src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="View 1">
+          <button class="pd-thumb active" data-img="assets/products/mocassin-noir-1.webp" aria-label="Ảnh 1">
+            <img src="assets/products/mocassin-noir-1.webp" alt="Giày Lười Đen, góc 1">
           </button>
-          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="View 2">
+          <button class="pd-thumb" data-img="assets/products/mocassin-noir-2.webp" aria-label="Ảnh 2">
+            <img loading="lazy" src="assets/products/mocassin-noir-2.webp" alt="Giày Lười Đen, góc 2">
           </button>
-          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="View 3">
+          <button class="pd-thumb" data-img="assets/products/mocassin-noir-3.webp" aria-label="Ảnh 3">
+            <img loading="lazy" src="assets/products/mocassin-noir-3.webp" alt="Giày Lười Đen, góc 3">
           </button>
-          <button class="pd-thumb" data-img="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="View 4">
+          <button class="pd-thumb" data-img="assets/products/mocassin-noir-4.webp" aria-label="Ảnh 4">
+            <img loading="lazy" src="assets/products/mocassin-noir-4.webp" alt="Giày Lười Đen, góc 4">
           </button>
         </div>
       </div>
@@ -117,20 +117,19 @@
       <!-- Info -->
       <div class="pd-info">
         <div class="pd-info-top">
-          <span class="pd-category">Haute Couture — SS26</span>
-          <h1 class="pd-title">Robe Dorée Impériale</h1>
-          <p class="pd-price">€ 28.500</p>
-          <p class="pd-tax">Taxes incluses. Livraison calculée à la caisse.</p>
+          <span class="pd-category">Giày Lười (Mocassin)</span>
+          <h1 class="pd-title">Giày Lười Đen</h1>
+          <p class="pd-price">€ 245</p>
+          <p class="pd-tax" data-vi="Đã bao gồm thuế. Phí giao hàng tính tại bước thanh toán." data-en="Taxes included. Shipping calculated at checkout." data-zh="含税。运费于结账时计算。">Đã bao gồm thuế. Phí giao hàng tính tại bước thanh toán.</p>
         </div>
 
         <div class="pd-divider"></div>
 
         <div class="pd-description">
-          <p>
-            Một kiệt tác của nghệ thuật thủ công đỉnh cao. Robe Dorée Impériale được tạo nên từ
-            lụa tơ tằm Ý cao cấp nhất, kết hợp cùng những đường thêu tay tinh xảo mất hơn 600 giờ
-            để hoàn thiện. Thiết kế mang hơi thở hoàng gia, tôn vinh vẻ đẹp quyền lực và sang trọng
-            của người phụ nữ hiện đại.
+          <p data-vi="Một trong ba dáng giày trứ danh của Chrysa Doré, khâu bởi chính đôi tay từng làm cho các thương hiệu quốc tế. Giày Lười Đen hoàn thiện từ da bê thật chọn lọc, khâu tay tỉ mỉ, đế da bền bỉ ôm trọn từng bước chân. Sự thanh lịch lặng lẽ cho mọi hành trình, sáng cũng như tối." data-en="One of the three signature silhouettes of Chrysa Doré, stitched by the very hands that crafted for international brands. The Mocassin Black is finished in selected genuine calfskin, hand-stitched with care, on a durable leather sole that cradles every step. Quiet elegance for every journey, day and night." data-zh="Chrysa Doré 三款经典鞋型之一，由曾为国际品牌制鞋的双手缝制。莫卡辛 黑色选用精挑细选的真小牛皮，手工细致缝制，搭配耐磨皮底，呵护每一步。低调优雅，伴你每段旅程，从早到晚。">
+            Một trong ba dáng giày trứ danh của Chrysa Doré, khâu bởi chính đôi tay từng làm cho các thương hiệu quốc tế.
+            Giày Lười Đen hoàn thiện từ da bê thật chọn lọc, khâu tay tỉ mỉ, đế da bền bỉ ôm trọn từng bước chân.
+            Sự thanh lịch lặng lẽ cho mọi hành trình, sáng cũng như tối.
           </p>
         </div>
 
@@ -138,26 +137,28 @@
 
         <!-- Color -->
         <div class="pd-option">
-          <span class="pd-option-label">Màu sắc: <strong>Noir Impérial</strong></span>
+          <span class="pd-option-label" data-vi="Màu sắc: <strong>Đen</strong>" data-en="Colour: <strong>Black</strong>" data-zh="颜色：<strong>黑色</strong>">Màu sắc: <strong>Đen</strong></span>
           <div class="pd-colors">
-            <button class="pd-color active" style="background: #0a0a0a;" aria-label="Noir Impérial"></button>
-            <button class="pd-color" style="background: #1a1a2e;" aria-label="Bleu Nuit"></button>
-            <button class="pd-color" style="background: #2d0a0a;" aria-label="Bordeaux"></button>
+            <button class="pd-color active" style="background: #1C1813;" aria-label="Đen"></button>
+            <button class="pd-color" style="background: #F3EDDE;" aria-label="Trắng"></button>
           </div>
         </div>
 
         <!-- Size -->
         <div class="pd-option">
-          <span class="pd-option-label">Kích cỡ</span>
+          <span class="pd-option-label" data-vi="Kích cỡ (EU)" data-en="Size (EU)" data-zh="尺码 (EU)">Kích cỡ (EU)</span>
           <div class="pd-sizes">
-            <button class="pd-size">34</button>
             <button class="pd-size">36</button>
-            <button class="pd-size active">38</button>
+            <button class="pd-size">37</button>
+            <button class="pd-size">38</button>
+            <button class="pd-size active">39</button>
             <button class="pd-size">40</button>
-            <button class="pd-size">42</button>
+            <button class="pd-size">41</button>
+            <button class="pd-size disabled" disabled>42</button>
+            <button class="pd-size">43</button>
             <button class="pd-size disabled" disabled>44</button>
           </div>
-          <a href="#" class="pd-size-guide">Hướng dẫn chọn size</a>
+          <a href="#" class="pd-size-guide" data-vi="Hướng dẫn chọn size" data-en="Size guide" data-zh="尺码指南">Hướng dẫn chọn size</a>
         </div>
 
         <div class="pd-divider"></div>
@@ -165,12 +166,12 @@
         <!-- Actions -->
         <div class="pd-actions">
           <button class="pd-add-cart">
-            <span>Thêm Vào Giỏ Hàng</span>
+            <span data-vi="Thêm Vào Giỏ Hàng" data-en="Add to Cart" data-zh="加入购物车">Thêm Vào Giỏ Hàng</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
             </svg>
           </button>
-          <button class="pd-wishlist" aria-label="Add to wishlist">
+          <button class="pd-wishlist" aria-label="Thêm vào danh sách yêu thích">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
             </svg>
@@ -183,19 +184,19 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 3 20 16 16 16 16 8"/><line x1="1" y1="10" x2="16" y2="10"/>
             </svg>
-            <span>Giao hàng miễn phí toàn cầu</span>
+            <span data-vi="Giao hàng miễn phí toàn cầu" data-en="Complimentary worldwide delivery" data-zh="全球免费配送">Giao hàng miễn phí toàn cầu</span>
           </div>
           <div class="pd-perk">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            <span>Bảo hành trọn đời</span>
+            <span data-vi="Bảo hành đường khâu trọn đời" data-en="Lifetime stitching warranty" data-zh="终身缝线保修">Bảo hành đường khâu trọn đời</span>
           </div>
           <div class="pd-perk">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              <path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
             </svg>
-            <span>Đóng gói quà tặng cao cấp</span>
+            <span data-vi="Đóng gói quà tặng &amp; khắc tên" data-en="Gift wrapping &amp; engraving" data-zh="礼品包装与刻字">Đóng gói quà tặng &amp; khắc tên</span>
           </div>
         </div>
 
@@ -203,51 +204,51 @@
         <div class="pd-accordions">
           <div class="pd-accordion">
             <button class="pd-accordion-header">
-              <span>Chi Tiết Sản Phẩm</span>
+              <span data-vi="Chất liệu &amp; Thủ công" data-en="Material &amp; Craft" data-zh="材质与工艺">Chất liệu &amp; Thủ công</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 5v14M5 12h14"/>
               </svg>
             </button>
             <div class="pd-accordion-body">
               <ul>
-                <li>Chất liệu: 100% lụa tơ tằm Ý (Seteria di Como)</li>
-                <li>Lót trong: Charmeuse silk cao cấp</li>
-                <li>Thêu tay bằng chỉ vàng 18K</li>
-                <li>Khóa kéo ẩn phía sau, hoàn thiện bằng tay</li>
-                <li>Sản xuất tại: Atelier Chrysa Doré, Paris</li>
-                <li>Mã sản phẩm: CD-HC-2026-001</li>
+                <li data-vi="Da bê thật, chọn lọc kỹ từng tấm" data-en="Genuine full-grain calfskin, carefully selected" data-zh="真小牛全粒面皮，精挑细选">Da bê thật, chọn lọc kỹ từng tấm</li>
+                <li data-vi="Khâu tay tỉ mỉ, từng mũi đều tăm tắp" data-en="Hand-stitched with care, every stitch even" data-zh="手工细致缝制，针脚均匀">Khâu tay tỉ mỉ, từng mũi đều tăm tắp</li>
+                <li data-vi="Lót trong da mềm, thấm hút tự nhiên" data-en="Soft leather lining, naturally breathable" data-zh="柔软皮革内衬，自然透气">Lót trong da mềm, thấm hút tự nhiên</li>
+                <li data-vi="Đế da khâu kép, bền bỉ và êm ái" data-en="Double-stitched leather sole, durable and supple" data-zh="双线皮底，耐久且柔软">Đế da khâu kép, bền bỉ và êm ái</li>
+                <li data-vi="Hoàn thiện thủ công tại xưởng Chrysa Doré, Việt Nam" data-en="Handcrafted at the Chrysa Doré atelier, Vietnam" data-zh="于 Chrysa Doré 工坊手工完成，越南">Hoàn thiện thủ công tại xưởng Chrysa Doré, Việt Nam</li>
+                <li data-vi="Mã sản phẩm: CD-MOC-NOIR" data-en="Reference: CD-MOC-NOIR" data-zh="货号：CD-MOC-NOIR">Mã sản phẩm: CD-MOC-NOIR</li>
               </ul>
             </div>
           </div>
           <div class="pd-accordion">
             <button class="pd-accordion-header">
-              <span>Hướng Dẫn Bảo Quản</span>
+              <span data-vi="Giao hàng &amp; Đổi trả" data-en="Delivery &amp; Returns" data-zh="配送与退换">Giao hàng &amp; Đổi trả</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 5v14M5 12h14"/>
               </svg>
             </button>
             <div class="pd-accordion-body">
               <ul>
-                <li>Chỉ giặt khô chuyên nghiệp</li>
-                <li>Bảo quản trong túi vải chuyên dụng đi kèm</li>
-                <li>Tránh tiếp xúc trực tiếp với nước hoa</li>
-                <li>Treo trên móc áo có đệm vai</li>
+                <li data-vi="Giao hàng miễn phí toàn cầu qua chuyển phát nhanh có bảo hiểm" data-en="Complimentary worldwide delivery by insured express courier" data-zh="全球免费配送，保价快递">Giao hàng miễn phí toàn cầu qua chuyển phát nhanh có bảo hiểm</li>
+                <li data-vi="Thời gian giao dự kiến: 3-5 ngày làm việc" data-en="Estimated delivery: 3-5 business days" data-zh="预计送达：3-5 个工作日">Thời gian giao dự kiến: 3-5 ngày làm việc</li>
+                <li data-vi="Đổi trả miễn phí trong vòng 30 ngày" data-en="Free returns within 30 days" data-zh="30 天内免费退换">Đổi trả miễn phí trong vòng 30 ngày</li>
+                <li data-vi="Dịch vụ chỉnh sửa form giày miễn phí lần đầu" data-en="Complimentary first fitting adjustment" data-zh="首次免费调整鞋型">Dịch vụ chỉnh sửa form giày miễn phí lần đầu</li>
               </ul>
             </div>
           </div>
           <div class="pd-accordion">
             <button class="pd-accordion-header">
-              <span>Vận Chuyển & Đổi Trả</span>
+              <span data-vi="Bảo quản" data-en="Care" data-zh="保养">Bảo quản</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 5v14M5 12h14"/>
               </svg>
             </button>
             <div class="pd-accordion-body">
               <ul>
-                <li>Giao hàng miễn phí toàn cầu qua DHL Express</li>
-                <li>Thời gian giao: 3-5 ngày làm việc</li>
-                <li>Đổi trả trong vòng 14 ngày</li>
-                <li>Dịch vụ chỉnh sửa miễn phí lần đầu</li>
+                <li data-vi="Dùng cây giữ form gỗ tuyết tùng sau mỗi lần mang" data-en="Use cedar shoe trees after each wear" data-zh="每次穿着后使用雪松鞋楦">Dùng cây giữ form gỗ tuyết tùng sau mỗi lần mang</li>
+                <li data-vi="Lau bụi bằng khăn mềm, đánh xi da định kỳ" data-en="Dust with a soft cloth, polish with leather cream regularly" data-zh="软布拭尘，定期使用皮革膏护理">Lau bụi bằng khăn mềm, đánh xi da định kỳ</li>
+                <li data-vi="Tránh ánh nắng trực tiếp và nơi ẩm thấp" data-en="Avoid direct sunlight and damp storage" data-zh="避免阳光直射与潮湿环境">Tránh ánh nắng trực tiếp và nơi ẩm thấp</li>
+                <li data-vi="Bảo quản trong túi vải chống bụi đi kèm" data-en="Store in the dust bag provided" data-zh="存放于随附防尘袋中">Bảo quản trong túi vải chống bụi đi kèm</li>
               </ul>
             </div>
           </div>
@@ -259,58 +260,95 @@
   <!-- Related Products -->
   <section class="pd-related">
     <div class="section-header">
-      <span class="section-label">Có Thể Bạn Thích</span>
-      <h2 class="section-title">Sản Phẩm<br><em>Tương Tự</em></h2>
+      <span class="section-label" data-animate data-vi="Có Thể Bạn Thích" data-en="You May Also Like" data-zh="您可能喜欢">Có Thể Bạn Thích</span>
+      <h2 class="section-title" data-animate data-vi="Có Thể<br><em>Bạn Thích</em>" data-en="You May<br><em>Also Like</em>" data-zh="您可能<br><em>也喜欢</em>">Có Thể<br><em>Bạn Thích</em></h2>
     </div>
     <div class="pd-related-grid">
-      <article class="product-card">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-bou-blanc" data-product-name="Quai Cài Trắng" data-product-price="225" data-product-image="assets/products/boucle-blanc-1.webp" data-product-category="Quai Cài">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="Sac Chrysa Signature">
+            <img loading="lazy" src="assets/products/boucle-blanc-1.webp" alt="Quai Cài Trắng">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+            </button>
           </div>
         </div>
         <div class="product-info">
-          <span class="product-category">Maroquinerie</span>
-          <h3 class="product-name">Sac Chrysa Signature</h3>
-          <p class="product-price">€ 12.800</p>
+          <span class="product-category">Quai Cài (Boucle)</span>
+          <h3 class="product-name">Quai Cài Trắng</h3>
+          <p class="product-price">€ 225</p>
         </div>
-      </article>
-      <article class="product-card">
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-bou-noir" data-product-name="Quai Cài Đen" data-product-price="235" data-product-image="assets/products/boucle-noir-1.webp" data-product-category="Quai Cài">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="Collier Étoile de Minuit">
+            <img loading="lazy" src="assets/products/boucle-noir-1.webp" alt="Quai Cài Đen">
+          </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+            </button>
           </div>
         </div>
         <div class="product-info">
-          <span class="product-category">Joaillerie</span>
-          <h3 class="product-name">Collier Étoile de Minuit</h3>
-          <p class="product-price">€ 45.000</p>
+          <span class="product-category">Quai Cài (Boucle)</span>
+          <h3 class="product-name">Quai Cài Đen</h3>
+          <p class="product-price">€ 235</p>
         </div>
-      </article>
-      <article class="product-card">
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-lace-noir" data-product-name="Xỏ Dây Đen" data-product-price="265" data-product-image="assets/products/lace-noir-1.webp" data-product-category="Xỏ Dây">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="Manteau Cachemire Royal">
+            <img loading="lazy" src="assets/products/lace-noir-1.webp" alt="Xỏ Dây Đen">
           </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+            </button>
+          </div>
+          <span class="product-badge">Giới Hạn</span>
         </div>
         <div class="product-info">
-          <span class="product-category">Prêt-à-Porter</span>
-          <h3 class="product-name">Manteau Cachemire Royal</h3>
-          <p class="product-price">€ 8.900</p>
+          <span class="product-category">Xỏ Dây (Lacé)</span>
+          <h3 class="product-name">Xỏ Dây Đen</h3>
+          <p class="product-price">€ 265</p>
         </div>
-      </article>
-      <article class="product-card">
+      </article></a>
+
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-moc-blanc-mini" data-product-name="Giày Lười Trắng (size nhỏ)" data-product-price="195" data-product-image="assets/products/mocassin-blanc-1.webp" data-product-category="Phiên bản Trẻ em">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17968-B1.jpg?v=1773739506&width=440" alt="Écharpe Soie Royale">
+            <img loading="lazy" src="assets/products/mocassin-blanc-1.webp" alt="Giày Lười Trắng (size nhỏ)">
           </div>
+          <div class="product-actions">
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+            </button>
+          </div>
+          <span class="product-badge">Trẻ Em</span>
         </div>
         <div class="product-info">
-          <span class="product-category">Accessoires</span>
-          <h3 class="product-name">Écharpe Soie Royale</h3>
-          <p class="product-price">€ 2.400</p>
+          <span class="product-category">Phiên bản Trẻ em</span>
+          <h3 class="product-name">Giày Lười Trắng (size nhỏ)</h3>
+          <p class="product-price">€ 195</p>
         </div>
-      </article>
+      </article></a>
     </div>
   </section>
 
@@ -321,44 +359,44 @@
         <div class="footer-brand">
           <div class="footer-logo">
             <span class="logo-chrysa">Chrysa</span>
-        <span class="logo-separator"></span>
-        <span class="logo-dore">Doré</span>
+            <span class="logo-separator"></span>
+            <span class="logo-dore">Doré</span>
           </div>
-          <p class="footer-tagline">L'Essence du Luxe</p>
+          <p class="footer-tagline" data-vi="Từng Bước Chân Trọn Vẹn" data-en="Every Step, Made With Care" data-zh="每一步，皆是匠心">Từng Bước Chân Trọn Vẹn</p>
         </div>
         <div class="footer-links-grid">
           <div class="footer-col">
-            <h5>Maison</h5>
+            <h5 data-vi="Thương Hiệu" data-en="The Brand" data-zh="品牌">Thương Hiệu</h5>
             <ul>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="story.html">Our Story</a></li>
-              <li><a href="#">Nghệ Nhân</a></li>
-              <li><a href="#">Tuyển Dụng</a></li>
+              <li><a href="story.html" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
+              <li><a href="story.html" data-vi="Xưởng Da" data-en="Atelier" data-zh="工坊">Xưởng Da</a></li>
+              <li><a href="story.html" data-vi="Nghệ Nhân" data-en="Artisans" data-zh="工匠">Nghệ Nhân</a></li>
+              <li><a href="index.html#contact" data-vi="Tuyển Dụng" data-en="Careers" data-zh="招聘">Tuyển Dụng</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Collections</h5>
+            <h5 data-vi="Bộ Sưu Tập" data-en="Collections" data-zh="系列">Bộ Sưu Tập</h5>
             <ul>
-              <li><a href="#">Haute Couture</a></li>
-              <li><a href="#">Prêt-à-Porter</a></li>
-              <li><a href="#">Joaillerie</a></li>
-              <li><a href="#">Maroquinerie</a></li>
+              <li><a href="collection.html" data-vi="Giày Lười (Mocassin)" data-en="The Mocassin" data-zh="莫卡辛 (Mocassin)">Giày Lười (Mocassin)</a></li>
+              <li><a href="collection.html" data-vi="Quai Cài (Boucle)" data-en="The Buckle" data-zh="搭扣鞋 (Boucle)">Quai Cài (Boucle)</a></li>
+              <li><a href="collection.html" data-vi="Xỏ Dây (Lacé)" data-en="The Laced" data-zh="系带鞋 (Lacé)">Xỏ Dây (Lacé)</a></li>
+              <li><a href="collection.html" data-vi="Phiên bản Trẻ em" data-en="Kids' Edition" data-zh="童鞋系列">Phiên bản Trẻ em</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Services</h5>
+            <h5 data-vi="Dịch Vụ" data-en="Services" data-zh="服务">Dịch Vụ</h5>
             <ul>
-              <li><a href="#">Private Shopping</a></li>
-              <li><a href="#">Made to Measure</a></li>
-              <li><a href="#">Gift Services</a></li>
-              <li><a href="#">Care & Repair</a></li>
+              <li><a href="index.html#contact" data-vi="Đo Ni Tận Nơi" data-en="Home Fitting" data-zh="上门量脚">Đo Ni Tận Nơi</a></li>
+              <li><a href="index.html#contact" data-vi="Khắc Tên Riêng" data-en="Personal Engraving" data-zh="专属刻字">Khắc Tên Riêng</a></li>
+              <li><a href="index.html#contact" data-vi="Quà Tặng Cao Cấp" data-en="Premium Gifts" data-zh="高端礼品">Quà Tặng Cao Cấp</a></li>
+              <li><a href="index.html#contact" data-vi="Bảo Dưỡng &amp; Sửa Chữa" data-en="Care &amp; Repair" data-zh="保养与维修">Bảo Dưỡng &amp; Sửa Chữa</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Legal</h5>
+            <h5 data-vi="Pháp Lý" data-en="Legal" data-zh="法律">Pháp Lý</h5>
             <ul>
-              <li><a href="#">Điều Khoản</a></li>
-              <li><a href="#">Bảo Mật</a></li>
+              <li><a href="#" data-vi="Điều Khoản" data-en="Terms" data-zh="条款">Điều Khoản</a></li>
+              <li><a href="#" data-vi="Bảo Mật" data-en="Privacy" data-zh="隐私">Bảo Mật</a></li>
               <li><a href="#">Cookies</a></li>
               <li><a href="#">Sitemap</a></li>
             </ul>
@@ -366,8 +404,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Chrysa Doré. Tous droits réservés.</p>
-        <p class="footer-craft">Handcrafted with passion in Paris</p>
+        <p data-vi="&copy; 2026 Chrysa Doré. Bảo lưu mọi quyền." data-en="&copy; 2026 Chrysa Doré. All rights reserved." data-zh="&copy; 2026 Chrysa Doré. 版权所有。">&copy; 2026 Chrysa Doré. Bảo lưu mọi quyền.</p>
+        <p class="footer-craft" data-vi="Khâu tay tận tâm tại Việt Nam" data-en="Hand-stitched with care in Vietnam" data-zh="于越南用心手工缝制">Khâu tay tận tâm tại Việt Nam</p>
       </div>
     </div>
   </footer>

@@ -1,5 +1,5 @@
 /* ============================================
-   CHRYSA DORÉ — Interactions & Animations
+   CHRYSA DORÉ · Interactions & Animations
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

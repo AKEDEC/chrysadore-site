@@ -1,13 +1,13 @@
 /* ============================================
-   CHRYSA DORÉ — Cart & Checkout System
+   CHRYSA DORÉ · Cart & Checkout System
    ============================================ */
 
 (function () {
   const STORAGE_KEY = 'chrysadore-cart';
   const CURRENCY = '€';
-  const FREE_SHIPPING_AT = 5000;
-  const EXPRESS_FEE = 50;
-  const STANDARD_FEE = 20;
+  const FREE_SHIPPING_AT = 600;
+  const EXPRESS_FEE = 30;
+  const STANDARD_FEE = 15;
 
   const formatPrice = (n) => `${CURRENCY} ${Math.round(n).toLocaleString('de-DE')}`;
 
@@ -88,7 +88,7 @@
       <aside class="cd-cart-drawer" id="cdCartDrawer" aria-hidden="true" aria-label="Giỏ hàng">
         <header class="cd-cart-header">
           <div>
-            <span class="cd-cart-eyebrow">— Maison Chrysa Doré</span>
+            <span class="cd-cart-eyebrow">Nhà Chrysa Doré</span>
             <h2>Giỏ Hàng</h2>
           </div>
           <button class="cd-cart-close" id="cdCartClose" aria-label="Đóng">
@@ -269,7 +269,7 @@
       <div class="cd-co-topbar">
         <div class="cd-co-brand">
           <span class="cd-co-brand-name">Chrysa Doré</span>
-          <span class="cd-co-brand-tag">Maison de Haute Couture · Paris</span>
+          <span class="cd-co-brand-tag">Giày Da Thủ Công · Việt Nam</span>
         </div>
         <div class="cd-co-steps">
           <span class="cd-step active"><i>01</i> Giỏ Hàng</span>
@@ -360,8 +360,8 @@
                 <input type="radio" name="ship" checked>
                 <span class="cd-co-check"></span>
                 <div class="cd-co-option-info">
-                  <span class="t">Express Premium · White Glove</span>
-                  <span class="d">2–3 ngày làm việc · Giao hàng tận nơi bằng găng tay trắng</span>
+                  <span class="t">Giao Hàng Nhanh · Đóng Gói Cẩn Thận</span>
+                  <span class="d">2-3 ngày làm việc · Giao hàng tận nơi, đóng gói nâng niu</span>
                 </div>
                 <span class="p">${ship === 0 ? 'Miễn phí' : formatPrice(EXPRESS_FEE)}</span>
               </label>
@@ -370,7 +370,7 @@
                 <span class="cd-co-check"></span>
                 <div class="cd-co-option-info">
                   <span class="t">Standard</span>
-                  <span class="d">5–7 ngày làm việc · Đóng gói tiêu chuẩn cao cấp</span>
+                  <span class="d">5-7 ngày làm việc · Đóng gói tiêu chuẩn cao cấp</span>
                 </div>
                 <span class="p">${formatPrice(STANDARD_FEE)}</span>
               </label>
@@ -432,8 +432,8 @@
                 <input type="radio" name="pay">
                 <span class="cd-co-check"></span>
                 <div class="cd-co-option-info">
-                  <span class="t">Thanh toán tại Maison Boutique</span>
-                  <span class="d">Đặt giữ hàng và thanh toán khi đến thử trực tiếp tại boutique</span>
+                  <span class="t">Thanh toán tại cửa hàng</span>
+                  <span class="d">Đặt giữ hàng và thanh toán khi đến thử trực tiếp tại cửa hàng</span>
                 </div>
               </label>
             </div>
@@ -575,10 +575,10 @@
               <path d="M8 12l3 3 5-6"/>
             </svg>
           </div>
-          <span class="cd-co-success-eyebrow">— Merci infiniment</span>
+          <span class="cd-co-success-eyebrow">Chân thành cảm ơn</span>
           <h2>Đơn Hàng Đã Được Tiếp Nhận</h2>
           <p class="cd-co-success-msg">
-            Cảm ơn quý khách đã tin tưởng Chrysa Doré. Đội ngũ Concierge của chúng tôi sẽ liên hệ
+            Cảm ơn quý khách đã tin tưởng Chrysa Doré. Đội ngũ chăm sóc khách hàng của chúng tôi sẽ liên hệ
             trong vòng 24 giờ tới để xác nhận và sắp xếp giao nhận.
           </p>
           <div class="cd-co-success-card">
@@ -596,7 +596,7 @@
             </div>
             <div class="cd-co-success-row">
               <span>Dự kiến giao</span>
-              <strong>2–3 ngày làm việc</strong>
+              <strong>2-3 ngày làm việc</strong>
             </div>
           </div>
           <p class="cd-co-success-email">

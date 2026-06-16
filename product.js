@@ -1,5 +1,5 @@
 /* ============================================
-   CHRYSA DORÉ — Product Detail Interactions
+   CHRYSA DORÉ · Product Detail Interactions
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chrysa Doré | Haute Couture</title>
-  <meta name="description" content="Chrysa Doré — thương hiệu giày học sinh mang bản sắc Việt. Walk Your Story.">
-  <meta property="og:title" content="Chrysa Doré | Haute Couture">
-  <meta property="og:description" content="Thương hiệu giày học sinh mang bản sắc Việt. Walk Your Story.">
+  <title>Chrysa Doré | Giày Da Thủ Công Việt Nam</title>
+  <meta name="description" content="Chrysa Doré, thương hiệu giày da thủ công Việt Nam cho học sinh, trẻ em và cả gia đình. Cùng đôi tay từng làm giày cho Lacoste, Calvin Klein, MCM, G3. Built to walk your story.">
+  <meta property="og:title" content="Chrysa Doré | Giày Da Thủ Công Việt Nam">
+  <meta property="og:description" content="Đôi giày được làm bởi chính đôi tay Việt từng tạo nên sản phẩm cho các thương hiệu hàng đầu thế giới, nay dành cho con em mình. Built to walk your story.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chrysadore.com/">
-  <meta name="theme-color" content="#1a1a1a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-  <link rel="preconnect" href="https://www.kickers.co.uk" crossorigin>
+  <meta property="og:image" content="https://chrysadore.com/assets/products/porsche-hero.jpg">
+  <meta name="theme-color" content="#14110C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=1600" fetchpriority="high">
-  <link rel="dns-prefetch" href="https://www.kickers.co.uk">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/products/porsche-hero.jpg" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="cart.css">
   <link rel="stylesheet" href="lang.css">
@@ -25,7 +24,7 @@
 
   <!-- Preloader -->
   <div class="preloader" id="preloader">
-    <img class="preloader-bg" src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=1600" alt="" width="1600" height="900">
+    <img class="preloader-bg" src="assets/products/porsche-hero.jpg" alt="" width="1080" height="1080">
     <div class="preloader-overlay"></div>
     <div class="preloader-inner">
       <div class="preloader-logo">Chrysa</div>
@@ -39,36 +38,28 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <span class="logo-chrysa">Chrysa</span>
         <span class="logo-separator"></span>
         <span class="logo-dore">Doré</span>
       </a>
       <ul class="nav-links">
-        <li><a href="collection.html" class="nav-link" data-hover="Bộ Sưu Tập" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
-        <li><a href="story.html" class="nav-link" data-hover="Our Story" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
-        <li><a href="#contact" class="nav-link" data-hover="Liên Hệ" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
+        <li><a href="collection.html" class="nav-link" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
+        <li><a href="story.html" class="nav-link" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
+        <li><a href="#contact" class="nav-link" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-          </svg>
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-          </svg>
-        </button>
-        <button class="nav-icon" aria-label="Search">
+        <button class="nav-icon" aria-label="Tìm kiếm">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
           </svg>
         </button>
-        <button class="nav-icon" aria-label="Wishlist">
+        <button class="nav-icon" aria-label="Yêu thích">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
         </button>
-        <button class="nav-icon cart-icon" aria-label="Cart">
+        <button class="nav-icon cart-icon" aria-label="Giỏ hàng">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
           </svg>
@@ -85,7 +76,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-menu-links">
       <li><a href="collection.html" data-vi="Bộ Sưu Tập" data-en="Collection" data-zh="系列">Bộ Sưu Tập</a></li>
-      <li><a href="story.html" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
+      <li><a href="story.html" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
       <li><a href="#contact" data-vi="Liên Hệ" data-en="Contact" data-zh="联系">Liên Hệ</a></li>
     </ul>
   </div>
@@ -93,117 +84,99 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="https://www.kickers.co.uk/cdn/shop/files/Hero_Banner_SS26_Mules_Desktop.jpg?v=1773832304&width=1600" alt="" class="hero-bg-img" width="1600" height="900" fetchpriority="high" decoding="async">
-      <div class="hero-overlay"></div>
+      <img src="assets/products/porsche-hero.jpg" alt="Chrysa Doré · Phiên bản Porsche" class="hero-bg-img" width="1080" height="1080" fetchpriority="high" decoding="async">
       <div class="hero-pattern"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow" data-animate data-vi="Giày Da Thủ Công Cho Trẻ Em | Depuis 1968" data-en="Handcrafted Leather Shoes for Children | Depuis 1968" data-zh="手工皮鞋，专为儿童 | Depuis 1968">Giày Da Thủ Công Cho Trẻ Em | Depuis 1968</p>
+      <p class="hero-eyebrow" data-animate data-vi="Thủ Công Việt Nam · Chuẩn Quốc Tế" data-en="Vietnamese Craft · International Standard" data-zh="越南手工 · 国际标准">Thủ Công Việt Nam · Chuẩn Quốc Tế</p>
       <h1 class="hero-title" data-animate>
         <span class="hero-title-line">Walk Your</span>
         <span class="hero-title-line hero-title-italic">Story</span>
       </h1>
-      <p class="hero-subtitle" data-animate data-vi="Giày da thủ công nâng niu từng bước chân đầu đời của bé" data-en="Handcrafted leather shoes cherishing every first step of your child" data-zh="手工皮鞋，珍视宝贝的每一个初次步伐">Giày da thủ công nâng niu từng bước chân đầu đời của bé</p>
+      <p class="hero-subtitle" data-animate data-vi="Đôi giày được làm bởi chính đôi tay Việt từng tạo nên sản phẩm cho các thương hiệu hàng đầu thế giới, nay dành cho con em mình." data-en="Shoes made by the very Vietnamese hands that crafted products for the world's leading brands, now made for our own children." data-zh="这双鞋由曾为世界顶级品牌打造产品的越南匠人之手制成，如今献给我们自己的孩子。">Đôi giày được làm bởi chính đôi tay Việt từng tạo nên sản phẩm cho các thương hiệu hàng đầu thế giới, nay dành cho con em mình.</p>
       <a href="collection.html" class="hero-cta" data-animate>
         <span data-vi="Khám Phá Bộ Sưu Tập" data-en="Explore the Collection" data-zh="探索系列">Khám Phá Bộ Sưu Tập</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
       </a>
     </div>
     <div class="hero-scroll">
-      <span data-vi="Cuộn xuống" data-en="Scroll down" data-zh="向下滚动">Cuộn xuống</span>
+      <span data-vi="Cuộn xuống" data-en="Scroll" data-zh="向下滚动">Cuộn xuống</span>
       <div class="hero-scroll-line"></div>
     </div>
-    <div class="hero-side-text">Chrysa Doré | Chaussures d'Enfants Depuis 1968</div>
+    <div class="hero-side-text">Chrysa Doré · Giày Da Khâu Tay · Việt Nam</div>
   </section>
 
   <!-- Marquee -->
   <div class="marquee">
     <div class="marquee-track">
-      <span>Cuir Italien</span>
-      <span class="marquee-dot"></span>
-      <span>Goodyear Welt</span>
-      <span class="marquee-dot"></span>
-      <span>Fait Main à Paris</span>
-      <span class="marquee-dot"></span>
-      <span>Pour Nos Enfants</span>
-      <span class="marquee-dot"></span>
-      <span>Cuir Italien</span>
-      <span class="marquee-dot"></span>
-      <span>Goodyear Welt</span>
-      <span class="marquee-dot"></span>
-      <span>Fait Main à Paris</span>
-      <span class="marquee-dot"></span>
-      <span>Pour Nos Enfants</span>
-      <span class="marquee-dot"></span>
+      <span>Bàn Tay Việt</span><span class="marquee-dot"></span>
+      <span>Chuẩn Quốc Tế</span><span class="marquee-dot"></span>
+      <span>Tự Hào Việt Nam</span><span class="marquee-dot"></span>
+      <span>Cho Thế Hệ Mai Sau</span><span class="marquee-dot"></span>
+      <span>Bàn Tay Việt</span><span class="marquee-dot"></span>
+      <span>Chuẩn Quốc Tế</span><span class="marquee-dot"></span>
+      <span>Tự Hào Việt Nam</span><span class="marquee-dot"></span>
+      <span>Cho Thế Hệ Mai Sau</span><span class="marquee-dot"></span>
     </div>
   </div>
 
   <!-- Collections Section -->
   <section class="collections" id="collections">
     <div class="section-header">
-      <span class="section-label" data-animate>01 / Collections</span>
-      <h2 class="section-title" data-animate data-vi="Bộ Sưu Tập<br><em>Mùa Mới</em>" data-en="Collection<br><em>New Season</em>" data-zh="系列<br><em>新季</em>">Bộ Sưu Tập<br><em>Mùa Mới</em></h2>
-      <p class="section-desc" data-animate data-vi="Mỗi đôi giày được tạo nên với tình yêu thương và sự tỉ mỉ, bảo vệ đôi chân nhỏ bé, đồng hành cùng bé trên mọi bước đi." data-en="Each pair of shoes is crafted with love and meticulous care, protecting little feet and accompanying your child on every step." data-zh="每一双鞋都倾注了爱与匠心，守护小小的双脚，陪伴孩子的每一步。">Mỗi đôi giày được tạo nên với tình yêu thương và sự tỉ mỉ, bảo vệ đôi chân nhỏ bé, đồng hành cùng bé trên mọi bước đi.</p>
+      <span class="section-label" data-animate>01 · Bộ Sưu Tập</span>
+      <h2 class="section-title" data-animate data-vi="Ba Dáng Giày<br><em>Trứ Danh</em>" data-en="Three Signature<br><em>Silhouettes</em>" data-zh="三款<br><em>经典鞋型</em>">Ba Dáng Giày<br><em>Trứ Danh</em></h2>
+      <p class="section-desc" data-animate data-vi="Mỗi đôi giày được hoàn thiện thủ công từ da thật, với đường khâu tỉ mỉ, đế bền bỉ, ôm trọn từng bước chân." data-en="Each pair finished by hand in genuine leather, with meticulous stitching, durable soles, cradling every step." data-zh="每一双皆以真皮手工制成，细致缝线、耐磨鞋底，呵护每一步。">Mỗi đôi giày được hoàn thiện thủ công từ da thật, với đường khâu tỉ mỉ, đế bền bỉ, ôm trọn từng bước chân.</p>
     </div>
     <div class="collections-grid">
-      <!-- Collection 1 -->
+      <!-- Le Mocassin -->
       <article class="collection-card" data-animate>
-        <div class="collection-img">
-          <div class="collection-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Adult_Mules.jpg?v=1773833405&width=1600" alt="Lumière d'Or">
+        <a href="collection.html" style="display:block;color:inherit">
+          <div class="collection-img">
+            <div class="collection-img-placeholder">
+              <img loading="lazy" src="assets/products/mocassin-noir-1.webp" alt="Giày Lười (Mocassin)">
+            </div>
+            <div class="collection-img-overlay"><span class="collection-season" data-vi="BIỂU TƯỢNG" data-en="SIGNATURE" data-zh="标志">BIỂU TƯỢNG</span></div>
           </div>
-          <div class="collection-img-overlay">
-            <span class="collection-season">SS26</span>
+          <div class="collection-info">
+            <h3 data-vi="Giày Lười (Mocassin)" data-en="The Mocassin" data-zh="莫卡辛 (Mocassin)">Giày Lười (Mocassin)</h3>
+            <p data-vi="Giày lười mocassin da trơn, dáng thanh lịch vượt thời gian cho mọi dịp." data-en="Slip-on leather moccasins, a timeless silhouette for every occasion." data-zh="一脚蹬皮革莫卡辛，经典隽永，适合任何场合。">Giày lười mocassin da trơn, dáng thanh lịch vượt thời gian cho mọi dịp.</p>
+            <span class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">Khám phá<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
-        </div>
-        <div class="collection-info">
-          <h3>Lumière d'Or</h3>
-          <p data-vi="Giày da bê mùa hè, sandal và mules thủ công cho những kỳ nghỉ Riviera cùng gia đình." data-en="Summer calfskin shoes, handcrafted sandals and mules for Riviera family holidays." data-zh="夏季小牛皮鞋履，手工凉鞋与穆勒鞋，适合家庭里维埃拉度假。">Giày da bê mùa hè, sandal và mules thủ công cho những kỳ nghỉ Riviera cùng gia đình.</p>
-          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
-            Khám phá
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        </a>
       </article>
-      <!-- Collection 2 -->
+      <!-- La Boucle -->
       <article class="collection-card" data-animate>
-        <div class="collection-img">
-          <div class="collection-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/SS26_Kickers_Website_Adults_Mules_Collage_Banner_2.jpg?v=1773835032&width=1600" alt="Nuit Éternelle">
+        <a href="collection.html" style="display:block;color:inherit">
+          <div class="collection-img">
+            <div class="collection-img-placeholder">
+              <img loading="lazy" src="assets/products/boucle-blanc-1.webp" alt="Quai Cài (Boucle)">
+            </div>
+            <div class="collection-img-overlay"><span class="collection-season" data-vi="TRẺ EM" data-en="KIDS" data-zh="童鞋">TRẺ EM</span></div>
           </div>
-          <div class="collection-img-overlay">
-            <span class="collection-season">AW26</span>
+          <div class="collection-info">
+            <h3 data-vi="Quai Cài (Boucle)" data-en="The Buckle" data-zh="搭扣鞋 (Boucle)">Quai Cài (Boucle)</h3>
+            <p data-vi="Giày quai cài tiện lợi cho bé, khoá dán chắc chắn, dễ mang dễ tháo." data-en="Easy buckle-strap shoes for little ones, secure and simple to slip on and off." data-zh="便于穿脱的搭扣童鞋，牢固贴合，轻松上脚。">Giày quai cài tiện lợi cho bé, khoá dán chắc chắn, dễ mang dễ tháo.</p>
+            <span class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">Khám phá<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
-        </div>
-        <div class="collection-info">
-          <h3>Nuit Éternelle</h3>
-          <p data-vi="Giày boot da đen cổ điển cho mùa thu đông, dáng Oxford và Derby cho các buổi lễ trang trọng." data-en="Classic black leather boots for autumn and winter, Oxford and Derby styles for formal occasions." data-zh="经典黑色皮靴，适合秋冬季节，牛津与德比款式适用于正式场合。">Giày boot da đen cổ điển cho mùa thu đông, dáng Oxford và Derby cho các buổi lễ trang trọng.</p>
-          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
-            Khám phá
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        </a>
       </article>
-      <!-- Collection 3 -->
+      <!-- Le Lacé -->
       <article class="collection-card" data-animate>
-        <div class="collection-img">
-          <div class="collection-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/Collage_Image_SS26_Adult_Mules_3.jpg?v=1773835335&width=1600" alt="Renaissance">
+        <a href="collection.html" style="display:block;color:inherit">
+          <div class="collection-img">
+            <div class="collection-img-placeholder">
+              <img loading="lazy" src="assets/products/lace-blanc-1.webp" alt="Xỏ Dây (Lacé)">
+            </div>
+            <div class="collection-img-overlay"><span class="collection-season" data-vi="XƯỞNG" data-en="ATELIER" data-zh="工坊">XƯỞNG</span></div>
           </div>
-          <div class="collection-img-overlay">
-            <span class="collection-season">COUTURE</span>
+          <div class="collection-info">
+            <h3 data-vi="Xỏ Dây (Lacé)" data-en="The Laced" data-zh="系带鞋 (Lacé)">Xỏ Dây (Lacé)</h3>
+            <p data-vi="Mocassin buộc dây cổ điển, đế cao chắc chắn, dấu ấn của xưởng Chrysa Doré." data-en="Classic laced moccasins on a sturdy sole, the Chrysa Doré atelier signature." data-zh="经典系带莫卡辛，厚实鞋底，Chrysa Doré 工坊的标志。">Mocassin buộc dây cổ điển, đế cao chắc chắn, dấu ấn của xưởng Chrysa Doré.</p>
+            <span class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">Khám phá<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
-        </div>
-        <div class="collection-info">
-          <h3>Renaissance</h3>
-          <p data-vi="Bộ sưu tập giới hạn, giày da patina thủ công, khắc tên riêng cho từng gia đình." data-en="Limited collection, handcrafted patina leather shoes, personalized engraving for each family." data-zh="限量系列，手工古旧皮革鞋履，为每个家庭定制刻字。">Bộ sưu tập giới hạn, giày da patina thủ công, khắc tên riêng cho từng gia đình.</p>
-          <a href="#" class="collection-link" data-vi="Khám phá" data-en="Explore" data-zh="探索">
-            Khám phá
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
+        </a>
       </article>
     </div>
   </section>
@@ -211,109 +184,94 @@
   <!-- Featured Products -->
   <section class="featured">
     <div class="section-header">
-      <span class="section-label" data-animate>02 / Sélection</span>
-      <h2 class="section-title" data-animate data-vi="Tuyển Chọn<br><em>Cho Bé</em>" data-en="Curated<br><em>For Kids</em>" data-zh="精选<br><em>童鞋</em>">Tuyển Chọn<br><em>Cho Bé</em></h2>
+      <span class="section-label" data-animate>02 · Tuyển Chọn</span>
+      <h2 class="section-title" data-animate data-vi="Tuyển Chọn<br><em>Nổi Bật</em>" data-en="Featured<br><em>Selection</em>" data-zh="精选<br><em>推荐</em>">Tuyển Chọn<br><em>Nổi Bật</em></h2>
     </div>
     <div class="featured-grid">
-      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-hc-001" data-product-name="Robe Dorée Impériale" data-product-price="28500" data-product-image="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" data-product-category="Haute Couture">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-moc-noir" data-product-name="Giày Lười Đen" data-product-price="245" data-product-image="assets/products/mocassin-noir-1.webp" data-product-category="Giày Lười">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17963-B1.jpg?v=1773739500&width=440" alt="Robe Dorée Impériale">
+            <img loading="lazy" src="assets/products/mocassin-noir-1.webp" alt="Giày Lười Đen">
           </div>
           <div class="product-actions">
-            <button class="product-action-btn" aria-label="Quick view">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
-              </svg>
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
-            <button class="product-action-btn" data-add-cart aria-label="Add to cart">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
-              </svg>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
             </button>
           </div>
-          <span class="product-badge">Exclusive</span>
+          <span class="product-badge" data-vi="BIỂU TƯỢNG" data-en="SIGNATURE" data-zh="标志">BIỂU TƯỢNG</span>
         </div>
         <div class="product-info">
-          <span class="product-category">Haute Couture</span>
-          <h3 class="product-name">Robe Dorée Impériale</h3>
-          <p class="product-price">€ 28.500</p>
+          <span class="product-category" data-vi="Giày Lười (Mocassin)" data-en="The Mocassin" data-zh="莫卡辛 (Mocassin)">Giày Lười (Mocassin)</span>
+          <h3 class="product-name" data-vi="Giày Lười Đen" data-en="Mocassin Black" data-zh="莫卡辛 黑色">Giày Lười Đen</h3>
+          <p class="product-price">€ 245</p>
         </div>
       </article></a>
 
-      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-mr-001" data-product-name="Sac Chrysa Signature" data-product-price="12800" data-product-image="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" data-product-category="Maroquinerie">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-bou-blanc" data-product-name="Quai Cài Trắng" data-product-price="225" data-product-image="assets/products/boucle-blanc-1.webp" data-product-category="Quai Cài">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17965-B1.jpg?v=1773739497&width=440" alt="Sac Chrysa Signature">
+            <img loading="lazy" src="assets/products/boucle-blanc-1.webp" alt="Quai Cài Trắng">
           </div>
           <div class="product-actions">
-            <button class="product-action-btn" aria-label="Quick view">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
-              </svg>
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
-            <button class="product-action-btn" data-add-cart aria-label="Add to cart">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
-              </svg>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
             </button>
           </div>
         </div>
         <div class="product-info">
-          <span class="product-category">Maroquinerie</span>
-          <h3 class="product-name">Sac Chrysa Signature</h3>
-          <p class="product-price">€ 12.800</p>
+          <span class="product-category" data-vi="Quai Cài (Boucle)" data-en="The Buckle" data-zh="搭扣鞋 (Boucle)">Quai Cài (Boucle)</span>
+          <h3 class="product-name" data-vi="Quai Cài Trắng" data-en="Buckle White" data-zh="搭扣鞋 白色">Quai Cài Trắng</h3>
+          <p class="product-price">€ 225</p>
         </div>
       </article></a>
 
-      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-jw-001" data-product-name="Collier Étoile de Minuit" data-product-price="45000" data-product-image="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" data-product-category="Joaillerie">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-lace-noir" data-product-name="Xỏ Dây Đen" data-product-price="265" data-product-image="assets/products/lace-noir-1.webp" data-product-category="Xỏ Dây">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17964-B1.jpg?v=1773739505&width=440" alt="Collier Étoile de Minuit">
+            <img loading="lazy" src="assets/products/lace-noir-1.webp" alt="Xỏ Dây Đen">
           </div>
           <div class="product-actions">
-            <button class="product-action-btn" aria-label="Quick view">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
-              </svg>
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
-            <button class="product-action-btn" data-add-cart aria-label="Add to cart">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
-              </svg>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
             </button>
           </div>
-          <span class="product-badge">Limited</span>
+          <span class="product-badge" data-vi="GIỚI HẠN" data-en="LIMITED" data-zh="限量">GIỚI HẠN</span>
         </div>
         <div class="product-info">
-          <span class="product-category">Joaillerie</span>
-          <h3 class="product-name">Collier Étoile de Minuit</h3>
-          <p class="product-price">€ 45.000</p>
+          <span class="product-category" data-vi="Xỏ Dây (Lacé)" data-en="The Laced" data-zh="系带鞋 (Lacé)">Xỏ Dây (Lacé)</span>
+          <h3 class="product-name" data-vi="Xỏ Dây Đen" data-en="Laced Black" data-zh="系带鞋 黑色">Xỏ Dây Đen</h3>
+          <p class="product-price">€ 265</p>
         </div>
       </article></a>
 
-      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-pp-001" data-product-name="Manteau Cachemire Royal" data-product-price="8900" data-product-image="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" data-product-category="Prêt-à-Porter">
+      <a href="product.html" class="product-card-link"><article class="product-card" data-animate data-product-id="cd-moc-blanc-mini" data-product-name="Giày Lười Trắng (size nhỏ)" data-product-price="195" data-product-image="assets/products/mocassin-blanc-1.webp" data-product-category="Phiên bản Trẻ em">
         <div class="product-img">
           <div class="product-img-placeholder">
-            <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/1-17966-B1.jpg?v=1773739500&width=440" alt="Manteau Cachemire Royal">
+            <img loading="lazy" src="assets/products/mocassin-blanc-1.webp" alt="Giày Lười Trắng (size nhỏ)">
           </div>
           <div class="product-actions">
-            <button class="product-action-btn" aria-label="Quick view">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
-              </svg>
+            <button class="product-action-btn" aria-label="Xem nhanh">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
-            <button class="product-action-btn" data-add-cart aria-label="Add to cart">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
-              </svg>
+            <button class="product-action-btn" data-add-cart aria-label="Thêm vào giỏ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
             </button>
           </div>
+          <span class="product-badge" data-vi="TRẺ EM" data-en="KIDS" data-zh="童鞋">TRẺ EM</span>
         </div>
         <div class="product-info">
-          <span class="product-category">Prêt-à-Porter</span>
-          <h3 class="product-name">Manteau Cachemire Royal</h3>
-          <p class="product-price">€ 8.900</p>
+          <span class="product-category" data-vi="Phiên bản Trẻ em" data-en="Kids' Edition" data-zh="童鞋系列">Phiên bản Trẻ em</span>
+          <h3 class="product-name" data-vi="Giày Lười Trắng (size nhỏ)" data-en="Mocassin White (Kids)" data-zh="莫卡辛 白色 (小码)">Giày Lười Trắng (size nhỏ)</h3>
+          <p class="product-price">€ 195</p>
         </div>
       </article></a>
     </div>
@@ -324,37 +282,33 @@
     <div class="atelier-inner">
       <div class="atelier-visual" data-animate>
         <div class="atelier-img-placeholder">
-          <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/BTS25_Lifestyle.jpg?v=1764761346&width=860" alt="L'Atelier Chrysa Doré">
-          <div class="atelier-overlay-text">L'Art du<br>Cuir</div>
+          <img loading="lazy" src="assets/products/porsche-portrait.jpg" alt="Xưởng thủ công Chrysa Doré">
+          <div class="atelier-overlay-text">Cùng Một<br>Đôi Tay</div>
         </div>
       </div>
       <div class="atelier-content">
-        <span class="section-label" data-animate>03 / L'Atelier</span>
-        <h2 class="section-title" data-animate data-vi="Giày Da<br><em>Thủ Công</em>" data-en="Leather Shoes<br><em>Handcrafted</em>" data-zh="皮鞋<br><em>手工制作</em>">Giày Da<br><em>Thủ Công</em></h2>
-        <p class="atelier-text" data-animate data-vi="Tại xưởng Chrysa Doré, mỗi đôi giày da cho bé được hoàn thiện bởi bàn tay nghệ nhân bậc thầy. Da bê Ý mềm mại, khâu tay Goodyear welt truyền thống, đế cao su tự nhiên, tất cả để đôi chân nhỏ được nâng niu và bảo vệ trong từng bước đi khám phá thế giới." data-en="At the Chrysa Doré atelier, every pair of children's leather shoes is finished by master artisan hands. Soft Italian calfskin, traditional Goodyear welt hand-stitching, natural rubber soles, all to cherish and protect little feet on every step of discovery." data-zh="在Chrysa Doré工坊，每一双儿童皮鞋均由大师级工匠手工完成。柔软的意大利小牛皮，传统固特异手工缝制，天然橡胶鞋底，只为呵护与守护每一双小脚的探索之旅。">
-          Tại xưởng Chrysa Doré, mỗi đôi giày da cho bé được hoàn thiện bởi bàn tay nghệ nhân bậc thầy.
-          Da bê Ý mềm mại, khâu tay Goodyear welt truyền thống, đế cao su tự nhiên,
-          tất cả để đôi chân nhỏ được nâng niu và bảo vệ trong từng bước đi khám phá thế giới.
+        <span class="section-label" data-animate>03 · Manufacturing DNA</span>
+        <h2 class="section-title" data-animate data-vi="Cùng Đôi Tay<br><em>Đẳng Cấp Thế Giới</em>" data-en="The Same Hands<br><em>World-Class</em>" data-zh="同样的双手<br><em>国际水准</em>">Cùng Đôi Tay<br><em>Đẳng Cấp Thế Giới</em></h2>
+        <p class="atelier-text" data-animate data-vi="Chính những đôi tay đã làm giày cho Lacoste, Calvin Klein, MCM và G3 nay tạo nên Chrysa Doré. Cùng dây chuyền, cùng kiểm soát chất lượng, cùng tiêu chuẩn quốc tế: từ thiết kế, chọn da, sản xuất đến kiểm định, tất cả trong một quy trình khép kín." data-en="The very hands that crafted shoes for Lacoste, Calvin Klein, MCM and G3 now create Chrysa Doré. The same line, the same quality control, the same international standard: from design and leather selection to production and inspection, all under one roof." data-zh="曾为 Lacoste、Calvin Klein、MCM、G3 制鞋的双手，如今打造 Chrysa Doré。同一条产线、同样的品控、同样的国际标准：从设计、选皮、生产到检验，全程一体。">
+          Chính những đôi tay đã làm giày cho Lacoste, Calvin Klein, MCM và G3 nay tạo nên Chrysa Doré. Cùng dây chuyền, cùng kiểm soát chất lượng, cùng tiêu chuẩn quốc tế: từ thiết kế, chọn da, sản xuất đến kiểm định, tất cả trong một quy trình khép kín.
         </p>
         <div class="atelier-stats" data-animate>
           <div class="stat">
-            <span class="stat-number">120+</span>
-            <span class="stat-label" data-vi="Công đoạn<br>cho mỗi đôi giày" data-en="Steps<br>per pair" data-zh="工序<br>每双鞋">Công đoạn<br>cho mỗi đôi giày</span>
+            <span class="stat-number">4</span>
+            <span class="stat-label" data-vi="Thương hiệu quốc tế<br>cùng một đôi tay" data-en="Global brands<br>same hands" data-zh="国际品牌<br>同一双手">Thương hiệu quốc tế<br>cùng một đôi tay</span>
           </div>
           <div class="stat">
-            <span class="stat-number">35</span>
-            <span class="stat-label" data-vi="Nghệ nhân<br>da bậc thầy" data-en="Master<br>leather artisans" data-zh="皮革<br>大师工匠">Nghệ nhân<br>da bậc thầy</span>
+            <span class="stat-number">100</span>
+            <span class="stat-label" data-vi="% chuẩn<br>quốc tế" data-en="% world-class<br>standard" data-zh="% 国际<br>标准">% chuẩn<br>quốc tế</span>
           </div>
           <div class="stat">
-            <span class="stat-number">1968</span>
-            <span class="stat-label" data-vi="Năm thành lập<br>tại Paris" data-en="Year founded<br>in Paris" data-zh="创立年份<br>巴黎">Năm thành lập<br>tại Paris</span>
+            <span class="stat-number">3</span>
+            <span class="stat-label" data-vi="Dáng giày<br>trứ danh" data-en="Signature<br>silhouettes" data-zh="经典<br>鞋型">Dáng giày<br>trứ danh</span>
           </div>
         </div>
-        <a href="#" class="atelier-link" data-animate>
-          <span data-vi="Tham Quan Xưởng Da" data-en="Visit the Atelier" data-zh="参观工坊">Tham Quan Xưởng Da</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
+        <a href="story.html" class="atelier-link" data-animate>
+          <span data-vi="Tìm Hiểu Câu Chuyện" data-en="Discover Our Story" data-zh="了解品牌故事">Tìm Hiểu Câu Chuyện</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
     </div>
@@ -363,34 +317,34 @@
   <!-- Editorial / Lookbook -->
   <section class="editorial">
     <div class="section-header">
-      <span class="section-label" data-animate>04 / Éditorial</span>
-      <h2 class="section-title" data-animate>Le Monde<br><em>Chrysa Doré</em></h2>
+      <span class="section-label" data-animate>04 · Khoảnh Khắc</span>
+      <h2 class="section-title" data-animate data-vi="Thế Giới<br><em>Chrysa Doré</em>" data-en="The World of<br><em>Chrysa Doré</em>" data-zh="Chrysa Doré<br><em>的世界</em>">Thế Giới<br><em>Chrysa Doré</em></h2>
     </div>
     <div class="editorial-grid">
       <div class="editorial-item editorial-large" data-animate>
         <div class="editorial-placeholder">
-          <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_ACW.jpg?v=1773834116&width=860" alt="Paris Fashion Week">
+          <img loading="lazy" src="assets/products/porsche-master.png" alt="Phiên bản Porsche">
           <div class="editorial-placeholder-text">
-            <span class="editorial-tag">EDITORIAL</span>
-            <span class="editorial-issue">Paris Fashion Week SS26</span>
+            <span class="editorial-tag" data-vi="Chiến Dịch" data-en="Campaign" data-zh="形象大片">Chiến Dịch</span>
+            <span class="editorial-issue" data-vi="Phiên bản Porsche" data-en="Porsche Edition" data-zh="保时捷联名">Phiên bản Porsche</span>
           </div>
         </div>
       </div>
       <div class="editorial-item" data-animate>
         <div class="editorial-placeholder">
-          <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Kids_Mule.jpg?v=1773833607&width=1600" alt="Lumière d'Or">
+          <img loading="lazy" src="assets/products/porsche-portrait.jpg" alt="Quiet Luxury">
           <div class="editorial-placeholder-text">
-            <span class="editorial-tag">CAMPAIGN</span>
-            <span class="editorial-issue">Lumière d'Or</span>
+            <span class="editorial-tag">Lookbook</span>
+            <span class="editorial-issue">Quiet Luxury</span>
           </div>
         </div>
       </div>
       <div class="editorial-item" data-animate>
         <div class="editorial-placeholder">
-          <img loading="lazy" src="https://www.kickers.co.uk/cdn/shop/files/Collage_Banner_SS26_Adult_Mules.jpg?v=1773833405&width=1600" alt="L'Atelier Paris">
+          <img loading="lazy" src="assets/products/lace-noir-1.webp" alt="Cuir & Main">
           <div class="editorial-placeholder-text">
-            <span class="editorial-tag">BEHIND THE SCENES</span>
-            <span class="editorial-issue">L'Atelier Paris</span>
+            <span class="editorial-tag" data-vi="Xưởng" data-en="Atelier" data-zh="工坊">Xưởng</span>
+            <span class="editorial-issue" data-vi="Da Thật &amp; Khâu Tay" data-en="Leather &amp; Hand" data-zh="真皮与手工">Da Thật &amp; Khâu Tay</span>
           </div>
         </div>
       </div>
@@ -401,11 +355,10 @@
   <section class="contact" id="contact">
     <div class="contact-inner">
       <div class="contact-left">
-        <span class="section-label" data-animate>05 / Contact</span>
-        <h2 class="section-title" data-animate data-vi="Kết Nối<br><em>Cùng Chúng Tôi</em>" data-en="Connect<br><em>With Us</em>" data-zh="联系<br><em>我们</em>">Kết Nối<br><em>Cùng Chúng Tôi</em></h2>
-        <p class="contact-text" data-animate data-vi="Đăng ký để nhận lời mời độc quyền đo ni chân cho bé, quyền truy cập sớm vào các mẫu giày giới hạn, và dịch vụ khắc tên gia đình." data-en="Register to receive exclusive fitting invitations for your child, early access to limited edition styles, and family name engraving services." data-zh="注册即可获得专属儿童试鞋邀请、限量款式优先购买权，以及家族刻字服务。">
-          Đăng ký để nhận lời mời độc quyền đo ni chân cho bé,
-          quyền truy cập sớm vào các mẫu giày giới hạn, và dịch vụ khắc tên gia đình.
+        <span class="section-label" data-animate>05 · Liên Hệ</span>
+        <h2 class="section-title" data-animate data-vi="Kết Nối<br><em>Cùng Chrysa Doré</em>" data-en="Connect<br><em>With Chrysa Doré</em>" data-zh="联系<br><em>Chrysa Doré</em>">Kết Nối<br><em>Cùng Chrysa Doré</em></h2>
+        <p class="contact-text" data-animate data-vi="Đăng ký để nhận lời mời đo ni chân tận nơi cho bé, ưu tiên tiếp cận các phiên bản giới hạn và dịch vụ khắc tên riêng." data-en="Register for in-home fitting invitations, priority access to limited editions, and personal engraving services." data-zh="注册即可获得上门量脚邀请、限量款优先购买权及专属刻字服务。">
+          Đăng ký để nhận lời mời đo ni chân tận nơi cho bé, ưu tiên tiếp cận các phiên bản giới hạn và dịch vụ khắc tên riêng.
         </p>
         <form class="contact-form" data-animate>
           <div class="form-row">
@@ -421,45 +374,31 @@
           </div>
           <button type="submit" class="form-submit">
             <span data-vi="Đăng Ký Nhận Tin" data-en="Subscribe" data-zh="订阅">Đăng Ký Nhận Tin</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
         </form>
       </div>
       <div class="contact-right" data-animate>
         <div class="contact-info-block">
-          <h4>Flagship Store</h4>
-          <p>8 Avenue Montaigne<br>75008 Paris, France</p>
-        </div>
-        <div class="contact-info-block">
-          <h4 data-vi="Showroom Việt Nam" data-en="Vietnam Showroom" data-zh="越南展厅">Showroom Việt Nam</h4>
-          <p>Tầng 5, Landmark 81<br>Quận Bình Thạnh, TP.HCM</p>
+          <h4 data-vi="Showroom · TP. Hồ Chí Minh, Việt Nam" data-en="Showroom · Ho Chi Minh City, Vietnam" data-zh="展厅 · 胡志明市，越南">Showroom · TP. Hồ Chí Minh, Việt Nam</h4>
+          <p data-vi="(đang cập nhật)" data-en="(to be updated)" data-zh="(更新中)">(đang cập nhật)</p>
         </div>
         <div class="contact-info-block">
           <h4 data-vi="Dịch Vụ Đo Ni Tận Nơi" data-en="Home Fitting Service" data-zh="上门量脚服务">Dịch Vụ Đo Ni Tận Nơi</h4>
-          <p>concierge@chrysadore.com<br>+33 1 42 68 00 00</p>
+          <p data-vi="(đang cập nhật)" data-en="(to be updated)" data-zh="(更新中)">(đang cập nhật)</p>
         </div>
         <div class="contact-social">
           <a href="#" class="social-link" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
           <a href="#" class="social-link" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </a>
           <a href="#" class="social-link" aria-label="Pinterest">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/><path d="M9 18l1.5-6"/>
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/><path d="M9 18l1.5-6"/></svg>
           </a>
           <a href="#" class="social-link" aria-label="WeChat">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5A8.48 8.48 0 0121 11.5z"/>
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5A8.48 8.48 0 0121 11.5z"/></svg>
           </a>
         </div>
       </div>
@@ -476,38 +415,38 @@
             <span class="logo-separator"></span>
             <span class="logo-dore">Doré</span>
           </div>
-          <p class="footer-tagline">Premiers Pas d'Exception</p>
+          <p class="footer-tagline" data-vi="Từng Bước Chân Trọn Vẹn" data-en="Every Step, Beautifully Made" data-zh="每一步，皆臻完美">Từng Bước Chân Trọn Vẹn</p>
         </div>
         <div class="footer-links-grid">
           <div class="footer-col">
-            <h5>Maison</h5>
+            <h5 data-vi="Thương Hiệu" data-en="The Brand" data-zh="品牌">Thương Hiệu</h5>
             <ul>
-              <li><a href="story.html" data-vi="Our Story" data-en="Our Story" data-zh="品牌故事">Our Story</a></li>
-              <li><a href="#">Atelier</a></li>
-              <li><a href="#" data-vi="Nghệ Nhân" data-en="Artisans" data-zh="工匠">Nghệ Nhân</a></li>
-              <li><a href="#" data-vi="Tuyển Dụng" data-en="Careers" data-zh="招聘">Tuyển Dụng</a></li>
+              <li><a href="story.html" data-vi="Câu Chuyện" data-en="Our Story" data-zh="品牌故事">Câu Chuyện</a></li>
+              <li><a href="story.html" data-vi="Xưởng Da" data-en="Atelier" data-zh="工坊">Xưởng Da</a></li>
+              <li><a href="story.html" data-vi="Nghệ Nhân" data-en="Artisans" data-zh="工匠">Nghệ Nhân</a></li>
+              <li><a href="#contact" data-vi="Tuyển Dụng" data-en="Careers" data-zh="招聘">Tuyển Dụng</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Collections</h5>
+            <h5 data-vi="Bộ Sưu Tập" data-en="Collections" data-zh="系列">Bộ Sưu Tập</h5>
             <ul>
-              <li><a href="collection.html" data-vi="Giày Tây" data-en="Dress Shoes" data-zh="正装鞋">Giày Tây</a></li>
-              <li><a href="collection.html">Boot & Chelsea</a></li>
-              <li><a href="collection.html">Sandal & Mules</a></li>
-              <li><a href="collection.html" data-vi="Giày Trường Học" data-en="School Shoes" data-zh="校鞋">Giày Trường Học</a></li>
+              <li><a href="collection.html" data-vi="Giày Lười (Mocassin)" data-en="The Mocassin" data-zh="莫卡辛 (Mocassin)">Giày Lười (Mocassin)</a></li>
+              <li><a href="collection.html" data-vi="Quai Cài (Boucle)" data-en="The Buckle" data-zh="搭扣鞋 (Boucle)">Quai Cài (Boucle)</a></li>
+              <li><a href="collection.html" data-vi="Xỏ Dây (Lacé)" data-en="The Laced" data-zh="系带鞋 (Lacé)">Xỏ Dây (Lacé)</a></li>
+              <li><a href="collection.html" data-vi="Phiên bản Trẻ em" data-en="Kids' Edition" data-zh="童鞋系列">Phiên bản Trẻ em</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Services</h5>
+            <h5 data-vi="Dịch Vụ" data-en="Services" data-zh="服务">Dịch Vụ</h5>
             <ul>
-              <li><a href="#" data-vi="Đo Ni Tận Nơi" data-en="Home Fitting" data-zh="上门量脚">Đo Ni Tận Nơi</a></li>
-              <li><a href="#" data-vi="Khắc Tên Gia Đình" data-en="Family Engraving" data-zh="家族刻字">Khắc Tên Gia Đình</a></li>
-              <li><a href="#" data-vi="Quà Tặng Cao Cấp" data-en="Premium Gifts" data-zh="高端礼品">Quà Tặng Cao Cấp</a></li>
-              <li><a href="#" data-vi="Bảo Dưỡng & Sửa Chữa" data-en="Care & Repair" data-zh="保养与维修">Bảo Dưỡng & Sửa Chữa</a></li>
+              <li><a href="#contact" data-vi="Đo Ni Tận Nơi" data-en="Home Fitting" data-zh="上门量脚">Đo Ni Tận Nơi</a></li>
+              <li><a href="#contact" data-vi="Khắc Tên Riêng" data-en="Personal Engraving" data-zh="专属刻字">Khắc Tên Riêng</a></li>
+              <li><a href="#contact" data-vi="Quà Tặng Cao Cấp" data-en="Premium Gifts" data-zh="高端礼品">Quà Tặng Cao Cấp</a></li>
+              <li><a href="#contact" data-vi="Bảo Dưỡng &amp; Sửa Chữa" data-en="Care &amp; Repair" data-zh="保养与维修">Bảo Dưỡng &amp; Sửa Chữa</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Legal</h5>
+            <h5 data-vi="Pháp Lý" data-en="Legal" data-zh="法律">Pháp Lý</h5>
             <ul>
               <li><a href="#" data-vi="Điều Khoản" data-en="Terms" data-zh="条款">Điều Khoản</a></li>
               <li><a href="#" data-vi="Bảo Mật" data-en="Privacy" data-zh="隐私">Bảo Mật</a></li>
@@ -518,8 +457,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Chrysa Doré. Tous droits réservés.</p>
-        <p class="footer-craft">Handcrafted with passion in Paris</p>
+        <p data-vi="&copy; 2026 Chrysa Doré. Bảo lưu mọi quyền." data-en="&copy; 2026 Chrysa Doré. All rights reserved." data-zh="&copy; 2026 Chrysa Doré. 版权所有。">&copy; 2026 Chrysa Doré. Bảo lưu mọi quyền.</p>
+        <p class="footer-craft" data-vi="Khâu tay tận tâm tại Việt Nam" data-en="Hand-stitched with care in Vietnam" data-zh="于越南用心手工缝制">Khâu tay tận tâm tại Việt Nam</p>
       </div>
     </div>
   </footer>
